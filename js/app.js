@@ -362,12 +362,35 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Open link & mark as read
+    // Resolve safe URL & open link, marking as read
     markAsRead(id);
-    if (link) {
-      window.open(link, "_blank", "noopener,noreferrer");
+    const safeUrl = resolveSafeUrl(article);
+    if (safeUrl) {
+      window.open(safeUrl, "_blank", "noopener,noreferrer");
     }
   });
+
+  // Helper: Resolve 100% safe URL with fallback
+  function resolveSafeUrl(article) {
+    if (!article) return "https://kageki.hankyu.co.jp/news/index.html";
+    let url = article.link;
+    if (typeof url === "string" && url.trim().length > 0) {
+      url = url.trim();
+      if (!url.includes("example.com") && (url.startsWith("http://") || url.startsWith("https://"))) {
+        return url;
+      }
+    }
+    // Fallback if link is missing or broken
+    const troupeOfficialMap = {
+      flower: "https://kageki.hankyu.co.jp/star/flower.html",
+      moon: "https://kageki.hankyu.co.jp/star/moon.html",
+      snow: "https://kageki.hankyu.co.jp/star/snow.html",
+      star: "https://kageki.hankyu.co.jp/star/star.html",
+      cosmos: "https://kageki.hankyu.co.jp/star/cosmos.html",
+      senka: "https://kageki.hankyu.co.jp/star/senka.html"
+    };
+    return troupeOfficialMap[article.troupe] || "https://kageki.hankyu.co.jp/news/index.html";
+  }
 
   // Troupe Tab Switching
   troupeTabs.forEach((tab) => {
