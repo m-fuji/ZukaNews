@@ -808,9 +808,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Star Drawer Modal (List of all stars - Reordered: 星組 → 花組 → 宙組 → 月組 → 雪組 → 専科)
+  // Star Drawer Modal (List of all stars - Reordered: 星組 → 花組 → 宙組 → 月組 → 雪組)
   const ALL_STARS_LIST = [
     // 星組 (Star)
+    { name: "礼真琴", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
     { name: "暁千星", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
     { name: "詩ちづる", troupe: "星組", icon: "⭐", desc: "星組トップ娘役" },
     { name: "天飛華音", troupe: "星組", icon: "⭐", desc: "星組男役スター" },
@@ -837,12 +838,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "朝美絢", troupe: "雪組", icon: "❄️", desc: "雪組トップスター" },
     { name: "音彩唯", troupe: "雪組", icon: "❄️", desc: "雪組トップ娘役" },
     { name: "瀬央ゆりあ", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
-    { name: "縣千", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
-
-    // 専科 (Senka)
-    { name: "輝月ゆうま", troupe: "専科", icon: "💎", desc: "専科男役スター" },
-    { name: "凛城きら", troupe: "専科", icon: "💎", desc: "専科男役スター" },
-    { name: "小桜ほのか", troupe: "専科", icon: "💎", desc: "専科娘役スター" }
+    { name: "縣千", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" }
   ];
 
   function openStarDrawer() {

@@ -94,9 +94,10 @@ TROUPES = {
         "color": "#2060B0",
         "keywords": [
             "星組", "スター", "Star Troupe",
-            "暁千星", "詩ちづる", "天飛華音", "碧海さりお", "稀惺かずと", "大希颯", "澪乃桜季", "美稀千種"
+            "礼真琴", "暁千星", "詩ちづる", "天飛華音", "碧海さりお", "稀惺かずと", "大希颯", "澪乃桜季", "美稀千種"
         ],
         "stars": [
+            {"name": "礼真琴", "role": "星組トップスター"},
             {"name": "暁千星", "role": "星組トップスター"},
             {"name": "詩ちづる", "role": "星組トップ娘役"},
             {"name": "天飛華音", "role": "星組男役スター"},
@@ -134,10 +135,18 @@ TROUPES = {
 }
 
 ALL_STARS = [
+    {"name": "礼真琴", "troupe": "star", "role": "星組トップスター"},
+    {"name": "暁千星", "troupe": "star", "role": "星組トップスター"},
+    {"name": "詩ちづる", "troupe": "star", "role": "星組トップ娘役"},
+    {"name": "天飛華音", "troupe": "star", "role": "星組男役スター"},
     {"name": "永久輝せあ", "troupe": "flower", "role": "花組トップスター"},
     {"name": "星空美咲", "troupe": "flower", "role": "花組トップ娘役"},
     {"name": "聖乃あすか", "troupe": "flower", "role": "花組男役スター"},
     {"name": "極美慎", "troupe": "flower", "role": "花組男役スター"},
+    {"name": "桜木みなと", "troupe": "cosmos", "role": "宙組トップスター"},
+    {"name": "春乃さくら", "troupe": "cosmos", "role": "宙組トップ娘役"},
+    {"name": "水美舞斗", "troupe": "cosmos", "role": "宙組男役スター"},
+    {"name": "瑠風輝", "troupe": "cosmos", "role": "宙組男役スター"},
     {"name": "鳳月杏", "troupe": "moon", "role": "月組トップスター"},
     {"name": "天紫珠李", "troupe": "moon", "role": "月組トップ娘役"},
     {"name": "風間柚乃", "troupe": "moon", "role": "月組男役スター"},
@@ -145,17 +154,7 @@ ALL_STARS = [
     {"name": "朝美絢", "troupe": "snow", "role": "雪組トップスター"},
     {"name": "音彩唯", "troupe": "snow", "role": "雪組トップ娘役"},
     {"name": "瀬央ゆりあ", "troupe": "snow", "role": "雪組男役スター"},
-    {"name": "縣千", "troupe": "snow", "role": "雪組男役スター"},
-    {"name": "暁千星", "troupe": "star", "role": "星組トップスター"},
-    {"name": "詩ちづる", "troupe": "star", "role": "星組トップ娘役"},
-    {"name": "天飛華音", "troupe": "star", "role": "星組男役スター"},
-    {"name": "桜木みなと", "troupe": "cosmos", "role": "宙組トップスター"},
-    {"name": "春乃さくら", "troupe": "cosmos", "role": "宙組トップ娘役"},
-    {"name": "水美舞斗", "troupe": "cosmos", "role": "宙組男役スター"},
-    {"name": "瑠風輝", "troupe": "cosmos", "role": "宙組男役スター"},
-    {"name": "輝月ゆうま", "troupe": "senka", "role": "専科男役スター"},
-    {"name": "凛城きら", "troupe": "senka", "role": "専科男役スター"},
-    {"name": "小桜ほのか", "troupe": "senka", "role": "専科娘役スター"}
+    {"name": "縣千", "troupe": "snow", "role": "雪組男役スター"}
 ]
 
 def fetch_url_content(url, timeout=12):
@@ -681,17 +680,17 @@ def build_seed_data():
         },
         {
             "id": "seed_006",
-            "title": "専科・輝月ゆうま＆凛城きら＆小桜ほのか 特別出演情報！舞台を重厚に彩る実力派スターたち",
-            "link": "https://kageki.hankyu.co.jp/news/20260905_001.html",
+            "title": "星組トップスター礼真琴 スペシャル特集！圧倒的なカリスマと輝きでファンを魅了",
+            "link": "https://kageki.hankyu.co.jp/news/index.html",
             "source": "宝塚歌劇公式",
             "source_type": "official",
             "published_at": (now - datetime.timedelta(days=1)).isoformat(),
             "published_str": (now - datetime.timedelta(days=1)).strftime("%Y/%m/%d %H:%M"),
             "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop&q=80",
-            "troupe": "senka",
-            "troupe_name": "専科",
-            "stars": ["輝月ゆうま", "凛城きら", "小桜ほのか"],
-            "summary": "圧倒的な芝居力と歌唱力で各組の公演を引き締める専科の精鋭たち。小桜ほのかの可憐な美声と輝月ゆうまの重厚な演技にファン喝采。"
+            "troupe": "star",
+            "troupe_name": "星組",
+            "stars": ["礼真琴"],
+            "summary": "唯一無二の歌唱力と卓越したダンスで星組を牽引するトップスター礼真琴。最新特集やステージ情報にファンの熱い視線が集まる。"
         },
         {
             "id": "seed_007",
