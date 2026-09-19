@@ -126,8 +126,13 @@
          Top Stars Quick Selector
          ==================================================================== -->
     <section class="star-filter-section">
-      <div class="star-section-label">
-        <span>✨ スターで探す</span>
+      <div class="star-section-header">
+        <div class="star-section-label">
+          <span>✨ スターで探す</span>
+        </div>
+        <button id="manageFocusedStarsBtn" class="focus-stars-manage-btn" title="注目スター（推し）を設定">
+          <span>💖 注目スター設定</span>
+        </button>
       </div>
       <div class="star-scroll">
         <!-- 花組 -->
@@ -378,7 +383,12 @@
       <div class="modal-sheet">
         <div class="sheet-handle"></div>
         <div class="sheet-header">
-          <h2 class="sheet-title">宝塚スター一覧</h2>
+          <div>
+            <h2 class="sheet-title">宝塚スター一覧</h2>
+            <p class="sheet-subtitle" style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+              💖をタップして注目スターに登録すると、ニュースが上位に優先表示されます✨
+            </p>
+          </div>
           <button id="closeStarDrawerBtn" class="sheet-close-btn" aria-label="閉じる">✕</button>
         </div>
         <div id="starDrawerList" class="star-grid">

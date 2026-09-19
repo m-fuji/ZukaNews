@@ -914,9 +914,6 @@ def main():
             "summary": summary[:220] if summary else title
         })
 
-    # Sort by published_at descending
-    processed_articles.sort(key=lambda x: x["published_at"], reverse=True)
-
     # Always merge verified rich seed articles so all media sources and top stars are present
     seeds = build_seed_data()
     existing_ids = {a["id"] for a in processed_articles}
@@ -924,7 +921,21 @@ def main():
         if s["id"] not in existing_ids:
             s["link"] = resolve_smart_article_url(s["link"], s["title"], s.get("source", "メディア"), s.get("troupe", "all"))
             processed_articles.append(s)
-    processed_articles.sort(key=lambda x: x["published_at"], reverse=True)
+
+    # Calculate baseline weighted ranking (Star, Flower, Cosmos prioritized)
+    def calc_article_initial_score(art):
+        troupe = art.get("troupe", "all")
+        # Boost for Star, Flower, Cosmos (ソラ組)
+        troupe_boost = 35 if troupe in ["star", "flower", "cosmos"] else 0
+        try:
+            p_dt = datetime.datetime.fromisoformat(art["published_at"])
+            epoch = p_dt.timestamp()
+        except Exception:
+            epoch = 0
+        # Convert boost to timestamp weight (~2 days boost)
+        return epoch + (troupe_boost * 86400 / 15)
+
+    processed_articles.sort(key=calc_article_initial_score, reverse=True)
 
     # Ensure every single article has a clean, validated, and smart URL
     for a in processed_articles:

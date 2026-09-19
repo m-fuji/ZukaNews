@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     activeView: "feed", // 'feed' | 'favorites'
     readIds: new Set(JSON.parse(localStorage.getItem("zuka_news_read_ids") || "[]")),
     favoriteIds: new Set(JSON.parse(localStorage.getItem("zuka_news_favorite_ids") || "[]")),
+    focusedStars: new Set(JSON.parse(localStorage.getItem("zuka_news_focused_stars") || "[]")),
   };
 
   // DOM Elements
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emptyStateEl = document.getElementById("emptyState");
   const troupeTabs = document.querySelectorAll(".troupe-tab");
   const starChips = document.querySelectorAll(".star-chip");
+  const manageFocusedStarsBtn = document.getElementById("manageFocusedStarsBtn");
   const unreadToggleBtn = document.getElementById("unreadToggleBtn");
   const markAllReadBtn = document.getElementById("markAllReadBtn");
   const unreadCountBadge = document.getElementById("unreadCountBadge");
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
       state.articles = data.articles || [];
       updateUnreadCounter();
+      updateFocusedStarChips();
       renderFeed();
     } catch (err) {
       console.warn("Could not load data/news.json:", err);
@@ -91,6 +94,98 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function saveFavoriteIds() {
     localStorage.setItem("zuka_news_favorite_ids", JSON.stringify([...state.favoriteIds]));
+  }
+
+  function saveFocusedStars() {
+    localStorage.setItem("zuka_news_focused_stars", JSON.stringify([...state.focusedStars]));
+  }
+
+  // Toggle focused star (My Oshi)
+  function toggleFocusedStar(starName, e) {
+    if (e) e.stopPropagation();
+    if (state.focusedStars.has(starName)) {
+      state.focusedStars.delete(starName);
+      window.showToast(`${starName} さんの注目を解除しました`);
+    } else {
+      state.focusedStars.add(starName);
+      window.showToast(`${starName} さんを注目スターに登録しました！💖`);
+    }
+    saveFocusedStars();
+    updateFocusedStarChips();
+    // Re-render star drawer if open
+    if (starDrawerModal && starDrawerModal.classList.contains("open")) {
+      openStarDrawer();
+    }
+    renderFeed();
+  }
+
+  // Update visual markers on star chips in horizontal scroll
+  function updateFocusedStarChips() {
+    starChips.forEach((chip) => {
+      const star = chip.getAttribute("data-star");
+      const wrap = chip.querySelector(".star-avatar-wrap");
+      const existingHeart = chip.querySelector(".star-focus-heart-tag");
+
+      if (state.focusedStars.has(star)) {
+        chip.classList.add("is-focused");
+        if (!existingHeart && wrap) {
+          const heartTag = document.createElement("span");
+          heartTag.className = "star-focus-heart-tag";
+          heartTag.textContent = "💖";
+          wrap.appendChild(heartTag);
+        }
+      } else {
+        chip.classList.remove("is-focused");
+        if (existingHeart) existingHeart.remove();
+      }
+    });
+  }
+
+  // Calculate intelligent ranking score
+  // 1. Focused Stars (+80 pts)
+  // 2. Priority Troupes: 星組, 花組, 宙組 (+35 pts)
+  // 3. Recency Score (up to 40 pts)
+  function calculateArticleScore(art) {
+    let score = 0;
+
+    // 1. Priority Troupe Boost (星組・花組・宙組を中心にランキング)
+    const priorityTroupes = ["star", "flower", "cosmos"];
+    if (priorityTroupes.includes(art.troupe)) {
+      score += 35;
+    }
+
+    // 2. Focused Star Boost (注目スターが記事に含まれる場合)
+    if (state.focusedStars && state.focusedStars.size > 0) {
+      let hasFocusedStar = false;
+      if (art.stars && Array.isArray(art.stars)) {
+        hasFocusedStar = art.stars.some((s) => state.focusedStars.has(s));
+      }
+      if (!hasFocusedStar) {
+        for (const starName of state.focusedStars) {
+          if (art.title.includes(starName) || (art.summary && art.summary.includes(starName))) {
+            hasFocusedStar = true;
+            break;
+          }
+        }
+      }
+      if (hasFocusedStar) {
+        score += 80;
+      }
+    }
+
+    // 3. Recency Score (up to 40 points based on published_at)
+    try {
+      const pubTime = new Date(art.published_at).getTime();
+      const nowTime = Date.now();
+      const diffHours = Math.max(0, (nowTime - pubTime) / (1000 * 60 * 60));
+      // Gradual decay over days
+      const recencyScore = Math.max(0, 40 - diffHours * 0.5);
+      score += recencyScore;
+    } catch {
+      // ignore date parse errors
+    }
+
+    return score;
   }
 
   // Mark article as read
@@ -180,9 +275,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Filter Logic
+  // Filter & Intelligent Ranking Logic
   function getFilteredArticles() {
-    return state.articles.filter((art) => {
+    const list = state.articles.filter((art) => {
       // Favorites view filter
       if (state.activeView === "favorites") {
         if (!state.favoriteIds.has(art.id)) return false;
@@ -219,6 +314,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       return true;
+    });
+
+    // Rank articles based on weighted score:
+    // 1. Focused Star (+80 pts)
+    // 2. Priority Troupes (星組, 花組, 宙組 +35 pts)
+    // 3. Recency (up to 40 pts)
+    return list.sort((a, b) => {
+      const scoreA = calculateArticleScore(a);
+      const scoreB = calculateArticleScore(b);
+      if (scoreB !== scoreA) {
+        return scoreB - scoreA;
+      }
+      return new Date(b.published_at) - new Date(a.published_at);
     });
   }
 
@@ -268,6 +376,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const timeStr = formatRelativeTime(art.published_at);
       const isOfficial = art.source_type === "official";
 
+      // Check if article is related to focused star
+      let isFocusedNews = false;
+      if (state.focusedStars && state.focusedStars.size > 0) {
+        if (art.stars && Array.isArray(art.stars)) {
+          isFocusedNews = art.stars.some((s) => state.focusedStars.has(s));
+        }
+        if (!isFocusedNews) {
+          for (const starName of state.focusedStars) {
+            if (art.title.includes(starName) || (art.summary && art.summary.includes(starName))) {
+              isFocusedNews = true;
+              break;
+            }
+          }
+        }
+      }
+
       // Stars tags HTML
       let starsHtml = "";
       if (art.stars && art.stars.length > 0) {
@@ -294,13 +418,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       return `
-        <article class="news-card ${isRead ? 'is-read' : ''}" data-id="${art.id}" data-link="${resolveSafeUrl(art)}">
+        <article class="news-card ${isRead ? 'is-read' : ''} ${isFocusedNews ? 'is-focused-news' : ''}" data-id="${art.id}" data-link="${resolveSafeUrl(art)}">
           <div class="card-media-wrap">
             ${mediaHtml}
             <div class="card-floating-badges">
               <span class="badge-troupe ${troupeMeta.class}">
                 ${troupeMeta.icon} ${troupeMeta.name}
               </span>
+              ${isFocusedNews ? '<span class="badge-focused-star">💖 注目スター</span>' : ''}
               ${!isRead ? '<span class="badge-unread">NEW</span>' : ''}
             </div>
           </div>
@@ -544,15 +669,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openStarDrawer() {
     if (!starDrawerList || !starDrawerModal) return;
-    starDrawerList.innerHTML = ALL_STARS_LIST.map(st => `
-      <div class="star-grid-card" data-star="${st.name}">
-        <div class="star-grid-avatar">${st.icon}</div>
-        <div class="star-grid-info">
-          <span class="star-grid-name">${st.name}</span>
-          <span class="star-grid-troupe">${st.troupe} / ${st.desc}</span>
+    starDrawerList.innerHTML = ALL_STARS_LIST.map(st => {
+      const isFocused = state.focusedStars.has(st.name);
+      return `
+        <div class="star-grid-card ${isFocused ? 'is-focused' : ''}" data-star="${st.name}">
+          <div class="star-grid-main">
+            <div class="star-grid-avatar">${st.icon}</div>
+            <div class="star-grid-info">
+              <span class="star-grid-name">${st.name}</span>
+              <span class="star-grid-troupe">${st.troupe} / ${st.desc}</span>
+            </div>
+          </div>
+          <button type="button" class="star-focus-toggle-btn" title="${isFocused ? '注目スターを解除' : '注目スターに登録'}" aria-label="注目スター設定">
+            ${isFocused ? '💖' : '🤍'}
+          </button>
         </div>
-      </div>
-    `).join("");
+      `;
+    }).join("");
 
     starDrawerModal.classList.add("open");
   }
@@ -570,6 +703,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (starDrawerModal) {
     starDrawerModal.addEventListener("click", (e) => {
       if (e.target === starDrawerModal) closeStarDrawer();
+
+      // Heart toggle button click
+      const focusBtn = e.target.closest(".star-focus-toggle-btn");
+      if (focusBtn) {
+        e.stopPropagation();
+        const card = focusBtn.closest(".star-grid-card");
+        if (card) {
+          const star = card.getAttribute("data-star");
+          toggleFocusedStar(star, e);
+        }
+        return;
+      }
+
+      // Card click for filter
       const card = e.target.closest(".star-grid-card");
       if (card) {
         const star = card.getAttribute("data-star");
@@ -577,6 +724,10 @@ document.addEventListener("DOMContentLoaded", () => {
         filterByStar(star);
       }
     });
+  }
+
+  if (manageFocusedStarsBtn) {
+    manageFocusedStarsBtn.addEventListener("click", openStarDrawer);
   }
 
   // Brand click to reset
