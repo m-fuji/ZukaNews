@@ -40,7 +40,7 @@ USER_AGENT = (
     "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
 )
 
-# Troupe and Star Definitions
+# Troupe and Star Definitions (Current 2026 System)
 TROUPES = {
     "flower": {
         "name": "花組",
@@ -48,12 +48,13 @@ TROUPES = {
         "color": "#E87A90",
         "keywords": [
             "花組", "フラワー", "Flower Troupe",
-            "永久輝せあ", "星空美咲", "聖乃あすか", "極美慎", "美羽愛", "綺城ひか理", "紫門ゆりや"
+            "永久輝せあ", "星空美咲", "聖乃あすか", "極美慎", "美羽愛", "侑輝大弥", "希波らいと", "紫門ゆりや"
         ],
         "stars": [
             {"name": "永久輝せあ", "role": "花組トップスター"},
             {"name": "星空美咲", "role": "花組トップ娘役"},
-            {"name": "聖乃あすか", "role": "花組男役スター"}
+            {"name": "聖乃あすか", "role": "花組男役スター"},
+            {"name": "極美慎", "role": "花組男役スター"}
         ]
     },
     "moon": {
@@ -67,7 +68,8 @@ TROUPES = {
         "stars": [
             {"name": "鳳月杏", "role": "月組トップスター"},
             {"name": "天紫珠李", "role": "月組トップ娘役"},
-            {"name": "風間柚乃", "role": "月組男役スター"}
+            {"name": "風間柚乃", "role": "月組男役スター"},
+            {"name": "礼華はる", "role": "月組男役スター"}
         ]
     },
     "snow": {
@@ -76,11 +78,12 @@ TROUPES = {
         "color": "#2B8270",
         "keywords": [
             "雪組", "スノー", "Snow Troupe",
-            "朝美絢", "夢白あや", "瀬央ゆりあ", "縣千", "音彩唯", "華純沙那", "奏乃はると"
+            "朝美絢", "音彩唯", "瀬央ゆりあ", "縣千", "華純沙那", "紀城へいや", "奏乃はると"
         ],
         "stars": [
             {"name": "朝美絢", "role": "雪組トップスター"},
-            {"name": "夢白あや", "role": "雪組トップ娘役"},
+            {"name": "音彩唯", "role": "雪組トップ娘役"},
+            {"name": "瀬央ゆりあ", "role": "雪組男役スター"},
             {"name": "縣千", "role": "雪組男役スター"}
         ]
     },
@@ -90,12 +93,13 @@ TROUPES = {
         "color": "#2060B0",
         "keywords": [
             "星組", "スター", "Star Troupe",
-            "礼真琴", "暁千星", "詩ちづる", "舞空瞳", "極美慎", "天飛華音", "碧海さりお", "美稀千種"
+            "暁千星", "詩ちづる", "天飛華音", "碧海さりお", "稀惺かずと", "大希颯", "澪乃桜季", "美稀千種"
         ],
         "stars": [
-            {"name": "礼真琴", "role": "星組トップスター"},
-            {"name": "暁千星", "role": "星組男役スター"},
-            {"name": "詩ちづる", "role": "星組娘役スター"}
+            {"name": "暁千星", "role": "星組トップスター"},
+            {"name": "詩ちづる", "role": "星組トップ娘役"},
+            {"name": "天飛華音", "role": "星組男役スター"},
+            {"name": "碧海さりお", "role": "星組男役スター"}
         ]
     },
     "cosmos": {
@@ -104,12 +108,13 @@ TROUPES = {
         "color": "#7B5294",
         "keywords": [
             "宙組", "コスモス", "Cosmos Troupe",
-            "芹香斗亜", "春乃さくら", "桜木みなと", "瑠風輝", "鷹翔千空", "風色日向", "山吹ひばり", "松風輝"
+            "桜木みなと", "春乃さくら", "水美舞斗", "瑠風輝", "鷹翔千空", "風色日向", "山吹ひばり", "松風輝"
         ],
         "stars": [
-            {"name": "芹香斗亜", "role": "宙組トップスター"},
+            {"name": "桜木みなと", "role": "宙組トップスター"},
             {"name": "春乃さくら", "role": "宙組トップ娘役"},
-            {"name": "桜木みなと", "role": "宙組男役スター"}
+            {"name": "水美舞斗", "role": "宙組男役スター"},
+            {"name": "瑠風輝", "role": "宙組男役スター"}
         ]
     },
     "senka": {
@@ -117,12 +122,12 @@ TROUPES = {
         "icon": "💎",
         "color": "#708090",
         "keywords": [
-            "専科", "水美舞斗", "瀬央ゆりあ", "凪七瑠海", "輝月ゆうま", "凛城きら", "悠真倫", "汝鳥伶"
+            "専科", "輝月ゆうま", "凛城きら", "悠真倫", "英真なおき", "美穂圭子", "小桜ほのか", "汝鳥伶", "高翔みず希"
         ],
         "stars": [
-            {"name": "水美舞斗", "role": "専科男役スター"},
-            {"name": "瀬央ゆりあ", "role": "専科男役スター"},
-            {"name": "凪七瑠海", "role": "専科男役スター"}
+            {"name": "輝月ゆうま", "role": "専科男役スター"},
+            {"name": "凛城きら", "role": "専科男役スター"},
+            {"name": "小桜ほのか", "role": "専科娘役スター"}
         ]
     }
 }
@@ -130,22 +135,26 @@ TROUPES = {
 ALL_STARS = [
     {"name": "永久輝せあ", "troupe": "flower", "role": "花組トップスター"},
     {"name": "星空美咲", "troupe": "flower", "role": "花組トップ娘役"},
-    {"name": "聖乃あすか", "troupe": "flower", "role": "花組"},
+    {"name": "聖乃あすか", "troupe": "flower", "role": "花組男役スター"},
+    {"name": "極美慎", "troupe": "flower", "role": "花組男役スター"},
     {"name": "鳳月杏", "troupe": "moon", "role": "月組トップスター"},
     {"name": "天紫珠李", "troupe": "moon", "role": "月組トップ娘役"},
-    {"name": "風間柚乃", "troupe": "moon", "role": "月組"},
+    {"name": "風間柚乃", "troupe": "moon", "role": "月組男役スター"},
+    {"name": "礼華はる", "troupe": "moon", "role": "月組男役スター"},
     {"name": "朝美絢", "troupe": "snow", "role": "雪組トップスター"},
-    {"name": "夢白あや", "troupe": "snow", "role": "雪組トップ娘役"},
-    {"name": "縣千", "troupe": "snow", "role": "雪組"},
-    {"name": "礼真琴", "troupe": "star", "role": "星組トップスター"},
-    {"name": "暁千星", "troupe": "star", "role": "星組"},
-    {"name": "詩ちづる", "troupe": "star", "role": "星組"},
-    {"name": "芹香斗亜", "troupe": "cosmos", "role": "宙組トップスター"},
+    {"name": "音彩唯", "troupe": "snow", "role": "雪組トップ娘役"},
+    {"name": "瀬央ゆりあ", "troupe": "snow", "role": "雪組男役スター"},
+    {"name": "縣千", "troupe": "snow", "role": "雪組男役スター"},
+    {"name": "暁千星", "troupe": "star", "role": "星組トップスター"},
+    {"name": "詩ちづる", "troupe": "star", "role": "星組トップ娘役"},
+    {"name": "天飛華音", "troupe": "star", "role": "星組男役スター"},
+    {"name": "桜木みなと", "troupe": "cosmos", "role": "宙組トップスター"},
     {"name": "春乃さくら", "troupe": "cosmos", "role": "宙組トップ娘役"},
-    {"name": "桜木みなと", "troupe": "cosmos", "role": "宙組"},
-    {"name": "水美舞斗", "troupe": "senka", "role": "専科"},
-    {"name": "瀬央ゆりあ", "troupe": "senka", "role": "専科"},
-    {"name": "凪七瑠海", "troupe": "senka", "role": "専科"}
+    {"name": "水美舞斗", "troupe": "cosmos", "role": "宙組男役スター"},
+    {"name": "瑠風輝", "troupe": "cosmos", "role": "宙組男役スター"},
+    {"name": "輝月ゆうま", "troupe": "senka", "role": "専科男役スター"},
+    {"name": "凛城きら", "troupe": "senka", "role": "専科男役スター"},
+    {"name": "小桜ほのか", "troupe": "senka", "role": "専科娘役スター"}
 ]
 
 def fetch_url_content(url, timeout=12):
@@ -401,12 +410,12 @@ def extract_actual_source(title, default_source):
     return title, default_source
 
 def build_seed_data():
-    """Fallback sample rich data in case of complete offline or sandbox network limitation."""
+    """Fallback sample rich data reflecting the current 2026 Takarazuka top stars."""
     now = datetime.datetime.now()
     return [
         {
             "id": "seed_001",
-            "title": "花組宝塚大劇場公演『エリザベート－愛と死の輪舞（ロンド）－』前夜祭が華やかに開催！永久輝せあと星空美咲が意気込み",
+            "title": "花組宝塚大劇場公演『エリザベート－愛と死の輪舞－』前夜祭が華やかに開催！永久輝せあと星空美咲が意気込み",
             "link": "https://kageki.hankyu.co.jp/revue/2026/elisabeth/index.html",
             "source": "宝塚歌劇公式",
             "source_type": "official",
@@ -416,11 +425,11 @@ def build_seed_data():
             "troupe": "flower",
             "troupe_name": "花組",
             "stars": ["永久輝せあ", "星空美咲"],
-            "summary": "宝塚大劇場にて花組公演『エリザベート』の前夜祭が開催され、トップスター永久輝せあとトップ娘役星空美咲が華麗な衣装で登壇。本公演への熱い思いを語りました。"
+            "summary": "宝塚大劇場にて花組公演『エリザベート』の前夜祭が開催され、トップスター永久輝せあとトップ娘役星空美咲が登壇。聖乃あすか（フランツ役）、極美慎（ルキーニ役）と共に意気込みを語りました。"
         },
         {
             "id": "seed_002",
-            "title": "星組次期トップコンビ決定！暁千星・詩ちづるによる『あぶない刑事』初舞台化に熱い視線",
+            "title": "星組トップコンビ暁千星・詩ちづる主演！伝説的ドラマ『あぶない刑事』宝塚初舞台化が話題沸騰",
             "link": "https://kageki.hankyu.co.jp/news/20260918_001.html",
             "source": "ステージナタリー",
             "source_type": "media",
@@ -429,13 +438,13 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?w=800&auto=format&fit=crop&q=80",
             "troupe": "star",
             "troupe_name": "星組",
-            "stars": ["暁千星", "詩ちづる", "礼真琴"],
-            "summary": "星組の次期トップスターに暁千星、トップ娘役に詩ちづるの就任が発表された。プレお披露目公演として横浜を舞台にした名作『あぶない刑事』の上演が決定。"
+            "stars": ["暁千星", "詩ちづる"],
+            "summary": "星組トップスター暁千星とトップ娘役詩ちづるによる注目の話題作！横浜を舞台にした名作『あぶない刑事』の宝塚初上演にファンの期待が集まります。"
         },
         {
             "id": "seed_003",
-            "title": "月組トップスター鳳月杏と天紫珠李の息の合ったデュエットダンス！全国ツアー開幕レポ",
-            "link": "https://kageki.hankyu.co.jp/revue/2026/moon_tour/index.html",
+            "title": "月組トップスター鳳月杏＆天紫珠李が魅せる洗練の大人の愛！東急シアターオーブ公演『NINE』開幕",
+            "link": "https://kageki.hankyu.co.jp/revue/2026/moon_nine/index.html",
             "source": "スポニチ",
             "source_type": "media",
             "published_at": (now - datetime.timedelta(hours=5)).isoformat(),
@@ -444,11 +453,11 @@ def build_seed_data():
             "troupe": "moon",
             "troupe_name": "月組",
             "stars": ["鳳月杏", "天紫珠李", "風間柚乃"],
-            "summary": "大人の色気と抜群の演技力で観客を魅了する月組新トップコンビ鳳月杏・天紫珠李。全国ツアー各地での熱狂の様子を詳しくレポート。"
+            "summary": "抜群の演技力とダンディズムを誇る月組トップスター鳳月杏と、華やかなトップ娘役天紫珠李。2番手スター風間柚乃と共に深みのあるドラマを熱演。"
         },
         {
             "id": "seed_004",
-            "title": "雪組新トップスター朝美絢が放つ圧倒的な美と輝き！大劇場お披露目公演の見どころ徹底解説",
+            "title": "雪組新トップコンビ朝美絢＆音彩唯が放つ圧倒的な輝き！新生雪組の華麗なるスタート",
             "link": "https://kageki.hankyu.co.jp/revue/2026/snow_top/index.html",
             "source": "日刊スポーツ",
             "source_type": "media",
@@ -457,12 +466,12 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80",
             "troupe": "snow",
             "troupe_name": "雪組",
-            "stars": ["朝美絢", "夢白あや", "縣千"],
-            "summary": "雪組トップスター朝美絢とトップ娘役夢白あやによる新生雪組が本格始動。美貌と卓越した歌唱力で魅せる新境地のステージ。"
+            "stars": ["朝美絢", "音彩唯", "瀬央ゆりあ"],
+            "summary": "雪組トップスター朝美絢と新トップ娘役音彩唯による新生雪組が本格始動。専科から異動した2番手スター瀬央ゆりあとの息もぴったり。"
         },
         {
             "id": "seed_005",
-            "title": "宙組公演ラインアップ発表！芹香斗亜と春乃さくらが織りなすドラマティック・ミュージカル",
+            "title": "宙組トップスター桜木みなと＆トップ娘役春乃さくら！水美舞斗との強力布陣で魅せるダイナミックな舞台",
             "link": "https://kageki.hankyu.co.jp/news/20260915_002.html",
             "source": "宝塚歌劇公式",
             "source_type": "official",
@@ -471,12 +480,12 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80",
             "troupe": "cosmos",
             "troupe_name": "宙組",
-            "stars": ["芹香斗亜", "春乃さくら", "桜木みなと"],
-            "summary": "宙組の次期大劇場公演が決定。繊細な心理描写とダイナミックな群舞が見どころのオリジナル・ミュージカルを上演。"
+            "stars": ["桜木みなと", "春乃さくら", "水美舞斗"],
+            "summary": "宙組トップスター桜木みなとと春乃さくらを中心に、2番手水美舞斗、瑠風輝らが結集。情熱的でスケール感あふれる新作ミュージカルを上演。"
         },
         {
             "id": "seed_006",
-            "title": "専科・水美舞斗＆瀬央ゆりあ 特別出演情報！各組を華やかに彩る同期スターの存在感",
+            "title": "専科・輝月ゆうま＆凛城きら＆小桜ほのか 特別出演情報！舞台を重厚に彩る実力派スターたち",
             "link": "https://kageki.hankyu.co.jp/news/20260914_003.html",
             "source": "タカラヅカ・ファンズ・ダイアリー",
             "source_type": "fan",
@@ -485,13 +494,13 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop&q=80",
             "troupe": "senka",
             "troupe_name": "専科",
-            "stars": ["水美舞斗", "瀬央ゆりあ"],
-            "summary": "圧倒的なダンススキルと華やかさを誇る水美舞斗と、温かみのある芝居で魅せる瀬央ゆりあ。二人の専科スターの活躍にファン大注目！"
+            "stars": ["輝月ゆうま", "凛城きら", "小桜ほのか"],
+            "summary": "圧倒的な芝居力と歌唱力で各組の公演を引き締める専科の精鋭たち。小桜ほのかの可憐な美声と輝月ゆうまの重厚な演技にファン喝采。"
         },
         {
             "id": "seed_007",
-            "title": "【観劇レポ】礼真琴の圧巻の武道館コンサート！客席を熱狂の渦に巻き込んだ奇跡の夜",
-            "link": "https://blog.takarazuka-fan.example.com/entry/2026/09/12/rei-makoto-concert",
+            "title": "【観劇レポ】星組トップスター暁千星のダイナミックなダンス！詩ちづるとの息を呑むデュエットに熱狂",
+            "link": "https://blog.takarazuka-fan.example.com/entry/2026/09/12/akatsuki-chisei-revue",
             "source": "スミレの咲く頃に（ファンブログ）",
             "source_type": "fan",
             "published_at": (now - datetime.timedelta(days=1, hours=3)).isoformat(),
@@ -499,13 +508,13 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&auto=format&fit=crop&q=80",
             "troupe": "star",
             "troupe_name": "星組",
-            "stars": ["礼真琴"],
-            "summary": "星組トップスター礼真琴の魂を揺さぶる歌唱力とシャープなダンス！全身全霊のパフォーマンスに涙したファンの熱い観劇レポート。"
+            "stars": ["暁千星", "詩ちづる", "天飛華音"],
+            "summary": "抜群の身体能力と華やかな笑顔で星組を牽引するトップスター暁千星。トップ娘役詩ちづるとの美しいリフトや熱い群舞に客席から惜しみない拍手！"
         },
         {
             "id": "seed_008",
-            "title": "花組・永久輝せあ Special Interview『組を率いる喜びと覚悟、そしてファンへの感謝』",
-            "link": "https://kageki.hankyu.co.jp/interview/flower_towaki.html",
+            "title": "花組・極美慎が組替え後の新境地を語る！永久輝せあ・聖乃あすかとの絆",
+            "link": "https://kageki.hankyu.co.jp/interview/flower_kiwami.html",
             "source": "ステージナタリー",
             "source_type": "media",
             "published_at": (now - datetime.timedelta(days=1, hours=6)).isoformat(),
@@ -513,27 +522,27 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?w=800&auto=format&fit=crop&q=80",
             "troupe": "flower",
             "troupe_name": "花組",
-            "stars": ["永久輝せあ", "聖乃あすか"],
-            "summary": "花組トップスターとして新たな時代を切り拓く永久輝せあ。トップ就任からの歩みと、次なるステージへの挑戦を率直に語ったロングインタビュー。"
+            "stars": ["極美慎", "永久輝せあ", "聖乃あすか"],
+            "summary": "星組から花組へ組替えし、ますます輝きを増す男役スター極美慎。花組トップスター永久輝せあとの刺激的な共演と今後の抱負を語る。"
         },
         {
             "id": "seed_009",
-            "title": "月組バウホール公演開幕！風間柚乃の緻密な役作りと熱演が光る珠玉の舞台",
-            "link": "https://kageki.hankyu.co.jp/revue/2026/moon_bow/index.html",
+            "title": "雪組・瀬央ゆりあの存在感！朝美絢トップ体制を支える頼もしい2番手スターの魅力",
+            "link": "https://kageki.hankyu.co.jp/revue/2026/snow_seo/index.html",
             "source": "デイリースポーツ",
             "source_type": "media",
             "published_at": (now - datetime.timedelta(days=2)).isoformat(),
             "published_str": (now - datetime.timedelta(days=2)).strftime("%Y/%m/%d %H:%M"),
             "image": "https://images.unsplash.com/photo-1518972559570-7cc1309f3229?w=800&auto=format&fit=crop&q=80",
-            "troupe": "moon",
-            "troupe_name": "月組",
-            "stars": ["風間柚乃", "鳳月杏"],
-            "summary": "月組の若き実力派スター風間柚乃の主演作が宝塚バウホールで開幕。深みのある芝居心と豊かな歌唱力で満員の客席を魅了した。"
+            "troupe": "snow",
+            "troupe_name": "雪組",
+            "stars": ["瀬央ゆりあ", "朝美絢", "縣千"],
+            "summary": "雪組へと異動し、朝美絢との絶妙なコンビネーションを見せる瀬央ゆりあ。温かみのある包容力と豊かなコメディセンスで客席を魅了。"
         },
         {
             "id": "seed_010",
-            "title": "雪組トップ娘役・夢白あやが魅せるエレガンス！美しいドレス姿と可憐な表現力に絶賛の声",
-            "link": "https://blog.takarazuka-fan.example.com/entry/2026/09/10/yumeshiro-aya",
+            "title": "雪組新トップ娘役・音彩唯の美しいソプラノに酔いしれる！朝美絢とのゴールデンデュエット",
+            "link": "https://blog.takarazuka-fan.example.com/entry/2026/09/10/neiro-yui",
             "source": "ヅカファンの小部屋（ファンブログ）",
             "source_type": "fan",
             "published_at": (now - datetime.timedelta(days=2, hours=4)).isoformat(),
@@ -541,12 +550,12 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&auto=format&fit=crop&q=80",
             "troupe": "snow",
             "troupe_name": "雪組",
-            "stars": ["夢白あや", "朝美絢"],
-            "summary": "華やかな舞台姿と天性のスター性で輝きを放つ雪組トップ娘役・夢白あや。朝美絢とのゴールデンコンビの魅力についてファンが熱く語る。"
+            "stars": ["音彩唯", "朝美絢"],
+            "summary": "新トップ娘役に就任した音彩唯。圧倒的な歌唱力と可憐な佇まいで朝美絢とのデュエットを美しく彩る、新生雪組の期待のヒロイン。"
         },
         {
             "id": "seed_011",
-            "title": "宙組・桜木みなと主演 東上公演が決定！スタイリッシュなアクション・エンターテインメント",
+            "title": "宙組・水美舞斗の圧巻のダンス！トップスター桜木みなとと共に刻む新たな歴史",
             "link": "https://kageki.hankyu.co.jp/news/20260908_001.html",
             "source": "宝塚歌劇公式",
             "source_type": "official",
@@ -555,12 +564,12 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&auto=format&fit=crop&q=80",
             "troupe": "cosmos",
             "troupe_name": "宙組",
-            "stars": ["桜木みなと", "芹香斗亜"],
-            "summary": "宙組の主要男役スター桜木みなとの主演公演が東京建物 Brillia HALLほかで上演決定。エネルギッシュなダンスと歌で魅せる新作。"
+            "stars": ["水美舞斗", "桜木みなと", "春乃さくら"],
+            "summary": "宙組へ異動し2番手スターとして躍動する水美舞斗。桜木みなとトップ体制の宙組に更なるダイナミズムと熱気をもたらしています。"
         },
         {
             "id": "seed_012",
-            "title": "「宝塚GRAPH」10月号発売！5組トップスター競演の特大ピンナップ＆充実の特別企画",
+            "title": "「宝塚GRAPH」最新号発売！5組トップスター（永久輝せあ・鳳月杏・朝美絢・暁千星・桜木みなと）豪華競演",
             "link": "https://kageki.hankyu.co.jp/news/graph202610.html",
             "source": "宝塚歌劇公式",
             "source_type": "official",
@@ -569,8 +578,8 @@ def build_seed_data():
             "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80",
             "troupe": "all",
             "troupe_name": "全体・その他",
-            "stars": ["永久輝せあ", "鳳月杏", "朝美絢", "礼真琴", "芹香斗亜"],
-            "summary": "宝塚GRAPH最新号の巻頭グラビア特集。5組トップスターの特別な撮り下ろし写真や、ここでしか読めないプライベート対談を収録。"
+            "stars": ["永久輝せあ", "鳳月杏", "朝美絢", "暁千星", "桜木みなと"],
+            "summary": "宝塚GRAPH最新号の巻頭グラビア特集。永久輝せあ、鳳月杏、朝美絢、暁千星、桜木みなとの5組トップスターの特別な撮り下ろし写真と特別座談会を収録。"
         }
     ]
 

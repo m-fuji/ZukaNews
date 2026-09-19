@@ -477,25 +477,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Star Drawer Modal (List of all stars)
+  // Star Drawer Modal (List of all stars - Current 2026 System)
   const ALL_STARS_LIST = [
     { name: "永久輝せあ", troupe: "花組", icon: "🌸", desc: "花組トップスター" },
     { name: "星空美咲", troupe: "花組", icon: "🌸", desc: "花組トップ娘役" },
     { name: "聖乃あすか", troupe: "花組", icon: "🌸", desc: "花組男役スター" },
+    { name: "極美慎", troupe: "花組", icon: "🌸", desc: "花組男役スター" },
     { name: "鳳月杏", troupe: "月組", icon: "🌙", desc: "月組トップスター" },
     { name: "天紫珠李", troupe: "月組", icon: "🌙", desc: "月組トップ娘役" },
     { name: "風間柚乃", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
+    { name: "礼華はる", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
     { name: "朝美絢", troupe: "雪組", icon: "❄️", desc: "雪組トップスター" },
-    { name: "夢白あや", troupe: "雪組", icon: "❄️", desc: "雪組トップ娘役" },
+    { name: "音彩唯", troupe: "雪組", icon: "❄️", desc: "雪組トップ娘役" },
+    { name: "瀬央ゆりあ", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
     { name: "縣千", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
-    { name: "礼真琴", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
-    { name: "暁千星", troupe: "星組", icon: "⭐", desc: "星組男役スター" },
-    { name: "詩ちづる", troupe: "星組", icon: "⭐", desc: "星組娘役スター" },
-    { name: "芹香斗亜", troupe: "宙組", icon: "🪐", desc: "宙組トップスター" },
+    { name: "暁千星", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
+    { name: "詩ちづる", troupe: "星組", icon: "⭐", desc: "星組トップ娘役" },
+    { name: "天飛華音", troupe: "星組", icon: "⭐", desc: "星組男役スター" },
+    { name: "桜木みなと", troupe: "宙組", icon: "🪐", desc: "宙組トップスター" },
     { name: "春乃さくら", troupe: "宙組", icon: "🪐", desc: "宙組トップ娘役" },
-    { name: "桜木みなと", troupe: "宙組", icon: "🪐", desc: "宙組男役スター" },
-    { name: "水美舞斗", troupe: "専科", icon: "💎", desc: "専科男役スター" },
-    { name: "瀬央ゆりあ", troupe: "専科", icon: "💎", desc: "専科男役スター" }
+    { name: "水美舞斗", troupe: "宙組", icon: "🪐", desc: "宙組男役スター" },
+    { name: "瑠風輝", troupe: "宙組", icon: "🪐", desc: "宙組男役スター" },
+    { name: "輝月ゆうま", troupe: "専科", icon: "💎", desc: "専科男役スター" },
+    { name: "凛城きら", troupe: "専科", icon: "💎", desc: "専科男役スター" },
+    { name: "小桜ほのか", troupe: "専科", icon: "💎", desc: "専科娘役スター" }
   ];
 
   function openStarDrawer() {
