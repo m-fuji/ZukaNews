@@ -371,50 +371,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Helper: Advanced Smart URL Evaluation & Correction Engine
+  // Helper: Direct Article URL Resolver (No search page wrappers)
   function resolveSafeUrl(article) {
     if (!article) return "https://kageki.hankyu.co.jp/news/index.html";
     let url = (article.link || "").trim();
-    const title = (article.title || "").trim();
-    const source = (article.source || "").trim();
     const troupe = article.troupe || "all";
 
-    // Clean query text for search fallback
-    const cleanTitle = title.replace(/[【】『』「」［］!！?？\s]+/g, " ").trim().slice(0, 30);
-    const encodedTitle = encodeURIComponent(cleanTitle);
+    // 1. Block dummy/non-existent test domains
+    const blockedDomains = ["example.com", "example.org", "test.com", "localhost"];
+    const isBlocked = blockedDomains.some((d) => url.includes(d));
 
-    // 1. Detect Google News wrapped/encrypted URLs that break on mobile/Safari
-    if (url.includes("news.google.com")) {
-      if (source.includes("ナタリー")) {
-        return `https://natalie.mu/search?query=${encodedTitle}`;
-      } else if (source.includes("ブログ村")) {
-        return `https://blogmura.com/search/posts?q=${encodedTitle}`;
-      } else if (source.includes("日刊スポーツ")) {
-        return `https://www.google.com/search?q=${encodeURIComponent('日刊スポーツ ' + cleanTitle + ' 宝塚')}`;
-      } else if (source.includes("デイリー")) {
-        return `https://www.google.com/search?q=${encodeURIComponent('デイリースポーツ ' + cleanTitle + ' 宝塚')}`;
-      } else if (source.includes("スポニチ")) {
-        return `https://www.google.com/search?q=${encodeURIComponent('スポニチ ' + cleanTitle + ' 宝塚')}`;
-      } else if (source.includes("報知")) {
-        return `https://www.google.com/search?q=${encodeURIComponent('スポーツ報知 ' + cleanTitle + ' 宝塚')}`;
-      } else if (source.includes("はてな")) {
-        return `https://b.hatena.ne.jp/q/${encodedTitle}`;
-      } else if (source.includes("公式")) {
-        return "https://kageki.hankyu.co.jp/news/index.html";
-      } else {
-        return `https://www.google.com/search?q=${encodeURIComponent(source + ' ' + cleanTitle + ' 宝塚')}`;
-      }
-    }
-
-    // 2. Detect dummy / invalid domains (example.com, etc.)
-    if (url.includes("example.com") || url.includes("example.org") || !url.startsWith("http")) {
-      if (source.includes("ナタリー")) {
-        return `https://natalie.mu/search?query=${encodedTitle}`;
-      } else if (source.includes("ブログ村")) {
-        return `https://blogmura.com/search/posts?q=${encodedTitle}`;
-      } else if (source.includes("日刊スポーツ")) {
-        return "https://www.nikkansports.com/entertainment/column/takarazuka/";
-      }
+    if (!url || !url.startsWith("http") || isBlocked) {
       const troupeOfficialMap = {
         flower: "https://kageki.hankyu.co.jp/star/flower.html",
         moon: "https://kageki.hankyu.co.jp/star/moon.html",
@@ -426,24 +393,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return troupeOfficialMap[troupe] || "https://kageki.hankyu.co.jp/news/index.html";
     }
 
-    // 3. Detect known broken / 404 / 500 paths and dynamically rewrite them
-    if (url.includes("natalie.mu/stage/tag") || url.includes("natalie.mu/stage/search")) {
-      return `https://natalie.mu/search?query=${encodedTitle}`;
-    }
-    if (url.includes("search.blogmura.com") || url.includes("takarazuka.blogmura.com")) {
-      return `https://blogmura.com/search/posts?q=${encodedTitle}`;
-    }
-    if (url.includes("daily.co.jp/search")) {
-      return `https://www.google.com/search?q=${encodeURIComponent('デイリースポーツ ' + cleanTitle + ' 宝塚')}`;
-    }
+    // 2. Fix known legacy broken paths to official real destinations
     if (url === "https://www.nikkansports.com/entertainment/takarazuka/" || url === "https://www.nikkansports.com/") {
       return "https://www.nikkansports.com/entertainment/column/takarazuka/";
-    }
-    if (url === "https://natalie.mu/stage" || url === "https://natalie.mu/stage/") {
-      return `https://natalie.mu/search?query=${encodedTitle}`;
-    }
-    if (url === "https://takarazuka.blogmura.com/" || url === "https://blogmura.com/") {
-      return `https://blogmura.com/search/posts?q=${encodedTitle}`;
     }
     if (url.includes("performance/index.html")) {
       return "https://kageki.hankyu.co.jp/news/index.html";
@@ -452,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return "https://kageki.hankyu.co.jp/star/special/index.html";
     }
 
-    // 4. Return validated direct link
+    // 3. Return 100% direct article URL for seamless 1-tap reading
     return url;
   }
 
