@@ -14,6 +14,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- Web App / Favicon / Android & iOS Homescreen Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/icon-64.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Zuka News" />
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -26,10 +36,7 @@
     <div id="authOverlay" class="auth-overlay">
       <div class="auth-card">
         <div class="auth-icon-wrap">
-          <svg viewBox="0 0 24 24">
-            <!-- Elegant Flower / Star Icon -->
-            <path d="M12 2L14.4 8.6L21 9.2L16 13.8L17.5 20.4L12 17L6.5 20.4L8 13.8L3 9.2L9.6 8.6L12 2Z"/>
-          </svg>
+          <img src="assets/icons/icon-192.png" alt="Zuka News 猫ロゴ" class="auth-logo-img" />
         </div>
         <h1 class="auth-title">Zuka News</h1>
         <p class="auth-subtitle">パスコードを入力してください</p>
@@ -73,9 +80,7 @@
     <header class="site-header">
       <div class="header-brand">
         <div class="brand-icon-wrap">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2C12 2 8 8 8 13C8 16.5 10 19 12 22C14 19 16 16.5 16 13C16 8 12 2 12 2Z"/>
-          </svg>
+          <img src="assets/icons/icon-192.png" alt="Zuka News 猫ロゴ" class="brand-logo-img" />
         </div>
         <div class="brand-titles">
           <span class="brand-name">Zuka News</span>

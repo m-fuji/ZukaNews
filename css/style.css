@@ -127,17 +127,18 @@ body {
 }
 
 .auth-icon-wrap {
-  width: 76px;
-  height: 76px;
+  width: 78px;
+  height: 78px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(232, 122, 144, 0.25), rgba(125, 91, 166, 0.4));
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
   box-shadow: 0 0 25px rgba(232, 122, 144, 0.4);
   animation: pulseGlow 3s infinite ease-in-out;
+  background: #ffffff;
 }
 
 @keyframes pulseGlow {
@@ -145,10 +146,12 @@ body {
   50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(232, 122, 144, 0.6); }
 }
 
-.auth-icon-wrap svg {
-  width: 38px;
-  height: 38px;
-  fill: #ffeef2;
+.auth-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
 }
 
 .auth-title {
@@ -314,20 +317,24 @@ body {
 }
 
 .brand-icon-wrap {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #e87a90, #7d5ba6);
+  overflow: hidden;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(232, 122, 144, 0.35);
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.22);
+  border: 1px solid rgba(220, 160, 180, 0.35);
+  flex-shrink: 0;
 }
 
-.brand-icon-wrap svg {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-titles {
