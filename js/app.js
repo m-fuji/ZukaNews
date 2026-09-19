@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const emptyStateEl = document.getElementById("emptyState");
   const troupeTabs = document.querySelectorAll(".troupe-tab");
   const starChips = document.querySelectorAll(".star-chip");
+  const starFilterSection = document.getElementById("starFilterSection");
+  const toggleStarCollapseBtn = document.getElementById("toggleStarCollapseBtn");
+  const starActiveBadge = document.getElementById("starActiveBadge");
+  const newsDigestSection = document.getElementById("newsDigestSection");
+  const digestBody = document.getElementById("digestBody");
+  const digestCounter = document.getElementById("digestCounter");
+  const digestBadge = document.getElementById("digestBadge");
   const manageFocusedStarsBtn = document.getElementById("manageFocusedStarsBtn");
   const unreadToggleBtn = document.getElementById("unreadToggleBtn");
   const markAllReadBtn = document.getElementById("markAllReadBtn");
@@ -201,6 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const unreadBadge = card.querySelector(".badge-unread");
         if (unreadBadge) unreadBadge.remove();
       }
+      renderNewsDigest();
     }
   }
 
@@ -344,8 +352,139 @@ document.addEventListener("DOMContentLoaded", () => {
     return map[troupeKey] || map.all;
   }
 
+  // Render "最新ニュース見どころ！" (3-line summary of top unread highlights)
+  function renderNewsDigest() {
+    if (!digestBody) return;
+
+    // Only show digest in feed view
+    if (newsDigestSection) {
+      newsDigestSection.style.display = (state.activeView === "feed") ? "block" : "none";
+    }
+    if (state.activeView !== "feed") return;
+
+    // Filter unread articles in overall articles
+    const unreadArticles = state.articles.filter((art) => !state.readIds.has(art.id));
+    const totalUnread = unreadArticles.length;
+
+    if (digestCounter) {
+      if (totalUnread > 0) {
+        digestCounter.textContent = `未読 ${totalUnread}件`;
+      } else {
+        digestCounter.textContent = "全記事既読✨";
+      }
+    }
+
+    if (totalUnread === 0) {
+      if (digestBadge) digestBadge.textContent = "読了完了";
+      digestBody.innerHTML = `
+        <div class="digest-all-read">
+          <div class="digest-all-read-icon">🌸</div>
+          <div class="digest-all-read-txt">
+            <strong>未読の最新ニュースはすべて読み終えました！</strong><br>
+            星組・花組・宙組をはじめ、新着記事が配信され次第自動で更新されます。
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    if (digestBadge) digestBadge.textContent = "未読厳選";
+
+    // Sort unread articles by intelligent score to highlight top 3
+    const sortedUnread = [...unreadArticles].sort((a, b) => {
+      return calculateArticleScore(b) - calculateArticleScore(a);
+    });
+
+    // Pick top 3 notable unread articles
+    const top3 = sortedUnread.slice(0, 3);
+
+    const itemsHtml = top3.map((art) => {
+      const troupeMeta = getTroupeMeta(art.troupe);
+      
+      let tagText = troupeMeta.name;
+      let tagClass = `tag-${art.troupe}`;
+      
+      let focusedStarName = null;
+      if (state.focusedStars && state.focusedStars.size > 0) {
+        if (art.stars && Array.isArray(art.stars)) {
+          focusedStarName = art.stars.find((s) => state.focusedStars.has(s));
+        }
+        if (!focusedStarName) {
+          for (const s of state.focusedStars) {
+            if (art.title.includes(s) || (art.summary && art.summary.includes(s))) {
+              focusedStarName = s;
+              break;
+            }
+          }
+        }
+      }
+
+      if (focusedStarName) {
+        tagText = `💖 ${focusedStarName}`;
+        tagClass = "tag-focused";
+      }
+
+      let cleanTitle = art.title
+        .replace(/^【.*?】/, "")
+        .replace(/^[\[\(].*?[\]\)]/, "")
+        .trim();
+      
+      let summaryText = art.summary ? art.summary.replace(/<[^>]+>/g, "").trim() : "";
+      if (!summaryText) {
+        summaryText = `${troupeMeta.name}の注目トピックスをチェック`;
+      }
+
+      return `
+        <div class="digest-item" data-article-id="${art.id}" title="記事へ移動">
+          <span class="digest-item-troupe">${troupeMeta.icon}</span>
+          <div class="digest-item-content">
+            <div class="digest-item-headline">
+              <span class="digest-item-tag ${tagClass}">${tagText}</span>
+              ${cleanTitle}
+            </div>
+            <div class="digest-item-desc">${summaryText}</div>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    digestBody.innerHTML = itemsHtml;
+
+    // Attach click events on digest items to smooth-scroll to article
+    digestBody.querySelectorAll(".digest-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const artId = item.getAttribute("data-article-id");
+        if (!artId) return;
+
+        // If currently filtering out this article, reset filters
+        const targetCard = document.querySelector(`.news-card[data-id="${artId}"]`);
+        if (!targetCard) {
+          state.troupe = "all";
+          state.star = null;
+          state.onlyUnread = false;
+          troupeTabs.forEach((t) => t.classList.toggle("active", t.getAttribute("data-troupe") === "all"));
+          starChips.forEach((c) => c.classList.remove("active"));
+          if (starActiveBadge) starActiveBadge.style.display = "none";
+          unreadToggleBtn.classList.remove("active");
+          renderFeed();
+        }
+
+        setTimeout(() => {
+          const card = document.querySelector(`.news-card[data-id="${artId}"]`);
+          if (card) {
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+            card.classList.remove("flash-highlight");
+            void card.offsetWidth; // trigger reflow
+            card.classList.add("flash-highlight");
+          }
+        }, 80);
+      });
+    });
+  }
+
   // Render Feed
   function renderFeed() {
+    renderNewsDigest();
     const filtered = getFilteredArticles();
 
     if (filtered.length === 0) {
@@ -563,6 +702,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    if (starActiveBadge) {
+      if (state.star) {
+        starActiveBadge.style.display = "inline-flex";
+        starActiveBadge.innerHTML = `<span>✨ ${state.star}</span> <span style="font-size:10px;opacity:0.8;margin-left:2px;">✕</span>`;
+      } else {
+        starActiveBadge.style.display = "none";
+        starActiveBadge.innerHTML = "";
+      }
+    }
+
     renderFeed();
     if (state.star) {
       window.showToast(`「${state.star}」のニュースを表示中 ✨`);
@@ -575,6 +724,24 @@ document.addEventListener("DOMContentLoaded", () => {
       filterByStar(starName);
     });
   });
+
+  // Toggle "スターで探す" section collapse
+  if (toggleStarCollapseBtn && starFilterSection) {
+    toggleStarCollapseBtn.addEventListener("click", () => {
+      const isCollapsed = starFilterSection.classList.toggle("is-collapsed");
+      toggleStarCollapseBtn.setAttribute("aria-expanded", !isCollapsed);
+    });
+  }
+
+  // Active star badge click inside toggle button to clear filter
+  if (starActiveBadge) {
+    starActiveBadge.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (state.star) {
+        filterByStar(state.star);
+      }
+    });
+  }
 
   // Unread Only Toggle
   unreadToggleBtn.addEventListener("click", () => {
@@ -641,27 +808,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Star Drawer Modal (List of all stars - Current 2026 System)
+  // Star Drawer Modal (List of all stars - Reordered: 星組 → 花組 → 宙組 → 月組 → 雪組 → 専科)
   const ALL_STARS_LIST = [
+    // 星組 (Star)
+    { name: "暁千星", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
+    { name: "詩ちづる", troupe: "星組", icon: "⭐", desc: "星組トップ娘役" },
+    { name: "天飛華音", troupe: "星組", icon: "⭐", desc: "星組男役スター" },
+
+    // 花組 (Flower)
     { name: "永久輝せあ", troupe: "花組", icon: "🌸", desc: "花組トップスター" },
     { name: "星空美咲", troupe: "花組", icon: "🌸", desc: "花組トップ娘役" },
     { name: "聖乃あすか", troupe: "花組", icon: "🌸", desc: "花組男役スター" },
     { name: "極美慎", troupe: "花組", icon: "🌸", desc: "花組男役スター" },
-    { name: "鳳月杏", troupe: "月組", icon: "🌙", desc: "月組トップスター" },
-    { name: "天紫珠李", troupe: "月組", icon: "🌙", desc: "月組トップ娘役" },
-    { name: "風間柚乃", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
-    { name: "礼華はる", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
-    { name: "朝美絢", troupe: "雪組", icon: "❄️", desc: "雪組トップスター" },
-    { name: "音彩唯", troupe: "雪組", icon: "❄️", desc: "雪組トップ娘役" },
-    { name: "瀬央ゆりあ", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
-    { name: "縣千", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
-    { name: "暁千星", troupe: "星組", icon: "⭐", desc: "星組トップスター" },
-    { name: "詩ちづる", troupe: "星組", icon: "⭐", desc: "星組トップ娘役" },
-    { name: "天飛華音", troupe: "星組", icon: "⭐", desc: "星組男役スター" },
+
+    // 宙組 (Cosmos)
     { name: "桜木みなと", troupe: "宙組", icon: "🪐", desc: "宙組トップスター" },
     { name: "春乃さくら", troupe: "宙組", icon: "🪐", desc: "宙組トップ娘役" },
     { name: "水美舞斗", troupe: "宙組", icon: "🪐", desc: "宙組男役スター" },
     { name: "瑠風輝", troupe: "宙組", icon: "🪐", desc: "宙組男役スター" },
+
+    // 月組 (Moon)
+    { name: "鳳月杏", troupe: "月組", icon: "🌙", desc: "月組トップスター" },
+    { name: "天紫珠李", troupe: "月組", icon: "🌙", desc: "月組トップ娘役" },
+    { name: "風間柚乃", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
+    { name: "礼華はる", troupe: "月組", icon: "🌙", desc: "月組男役スター" },
+
+    // 雪組 (Snow)
+    { name: "朝美絢", troupe: "雪組", icon: "❄️", desc: "雪組トップスター" },
+    { name: "音彩唯", troupe: "雪組", icon: "❄️", desc: "雪組トップ娘役" },
+    { name: "瀬央ゆりあ", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
+    { name: "縣千", troupe: "雪組", icon: "❄️", desc: "雪組男役スター" },
+
+    // 専科 (Senka)
     { name: "輝月ゆうま", troupe: "専科", icon: "💎", desc: "専科男役スター" },
     { name: "凛城きら", troupe: "専科", icon: "💎", desc: "専科男役スター" },
     { name: "小桜ほのか", troupe: "専科", icon: "💎", desc: "専科娘役スター" }
@@ -742,6 +920,10 @@ document.addEventListener("DOMContentLoaded", () => {
       
       troupeTabs.forEach(t => t.classList.toggle("active", t.getAttribute("data-troupe") === "all"));
       starChips.forEach(c => c.classList.remove("active"));
+      if (starActiveBadge) {
+        starActiveBadge.style.display = "none";
+        starActiveBadge.innerHTML = "";
+      }
       unreadToggleBtn.classList.remove("active");
       searchContainer.classList.remove("open");
       searchInput.value = "";

@@ -125,17 +125,47 @@
     <!-- ====================================================================
          Top Stars Quick Selector
          ==================================================================== -->
-    <section class="star-filter-section">
+    <!-- ====================================================================
+         Top Stars Quick Selector (Collapsible)
+         ==================================================================== -->
+    <section class="star-filter-section is-collapsed" id="starFilterSection">
       <div class="star-section-header">
-        <div class="star-section-label">
-          <span>✨ スターで探す</span>
-        </div>
+        <button id="toggleStarCollapseBtn" class="star-section-toggle-btn" aria-expanded="false" aria-label="スター一覧の開閉">
+          <div class="star-toggle-title">
+            <span class="star-toggle-icon-sparkle">✨</span>
+            <span class="star-toggle-label">スターで探す</span>
+            <span class="star-toggle-chevron">▾</span>
+          </div>
+          <span id="starActiveBadge" class="star-active-badge" style="display: none;"></span>
+        </button>
         <button id="manageFocusedStarsBtn" class="focus-stars-manage-btn" title="注目スター（推し）を設定">
           <span>💖 注目スター設定</span>
         </button>
       </div>
-      <div class="star-scroll">
-        <!-- 花組 -->
+      <div class="star-scroll" id="starScrollContainer">
+        <!-- ⭐ 星組 -->
+        <div class="star-chip" data-star="暁千星">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#256bb8;">⭐</div>
+          </div>
+          <span class="star-name">暁千星</span>
+        </div>
+
+        <div class="star-chip" data-star="詩ちづる">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#256bb8;">⭐</div>
+          </div>
+          <span class="star-name">詩ちづる</span>
+        </div>
+
+        <div class="star-chip" data-star="天飛華音">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#256bb8;">⭐</div>
+          </div>
+          <span class="star-name">天飛華音</span>
+        </div>
+
+        <!-- 🌸 花組 -->
         <div class="star-chip" data-star="永久輝せあ">
           <div class="star-avatar-wrap">
             <div class="star-avatar" style="color:#e87a90;">🌸</div>
@@ -164,80 +194,7 @@
           <span class="star-name">極美慎</span>
         </div>
 
-        <!-- 月組 -->
-        <div class="star-chip" data-star="鳳月杏">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#d49826;">🌙</div>
-          </div>
-          <span class="star-name">鳳月杏</span>
-        </div>
-
-        <div class="star-chip" data-star="天紫珠李">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#d49826;">🌙</div>
-          </div>
-          <span class="star-name">天紫珠李</span>
-        </div>
-
-        <div class="star-chip" data-star="風間柚乃">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#d49826;">🌙</div>
-          </div>
-          <span class="star-name">風間柚乃</span>
-        </div>
-
-        <!-- 雪組 -->
-        <div class="star-chip" data-star="朝美絢">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#2b8270;">❄️</div>
-          </div>
-          <span class="star-name">朝美絢</span>
-        </div>
-
-        <div class="star-chip" data-star="音彩唯">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#2b8270;">❄️</div>
-          </div>
-          <span class="star-name">音彩唯</span>
-        </div>
-
-        <div class="star-chip" data-star="瀬央ゆりあ">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#2b8270;">❄️</div>
-          </div>
-          <span class="star-name">瀬央ゆりあ</span>
-        </div>
-
-        <div class="star-chip" data-star="縣千">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#2b8270;">❄️</div>
-          </div>
-          <span class="star-name">縣千</span>
-        </div>
-
-        <!-- 星組 -->
-        <div class="star-chip" data-star="暁千星">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#256bb8;">⭐</div>
-          </div>
-          <span class="star-name">暁千星</span>
-        </div>
-
-        <div class="star-chip" data-star="詩ちづる">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#256bb8;">⭐</div>
-          </div>
-          <span class="star-name">詩ちづる</span>
-        </div>
-
-        <div class="star-chip" data-star="天飛華音">
-          <div class="star-avatar-wrap">
-            <div class="star-avatar" style="color:#256bb8;">⭐</div>
-          </div>
-          <span class="star-name">天飛華音</span>
-        </div>
-
-        <!-- 宙組 -->
+        <!-- 🪐 宙組 -->
         <div class="star-chip" data-star="桜木みなと">
           <div class="star-avatar-wrap">
             <div class="star-avatar" style="color:#7b5294;">🪐</div>
@@ -266,7 +223,58 @@
           <span class="star-name">瑠風輝</span>
         </div>
 
-        <!-- 専科 -->
+        <!-- 🌙 月組 -->
+        <div class="star-chip" data-star="鳳月杏">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#d49826;">🌙</div>
+          </div>
+          <span class="star-name">鳳月杏</span>
+        </div>
+
+        <div class="star-chip" data-star="天紫珠李">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#d49826;">🌙</div>
+          </div>
+          <span class="star-name">天紫珠李</span>
+        </div>
+
+        <div class="star-chip" data-star="風間柚乃">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#d49826;">🌙</div>
+          </div>
+          <span class="star-name">風間柚乃</span>
+        </div>
+
+        <!-- ❄️ 雪組 -->
+        <div class="star-chip" data-star="朝美絢">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#2b8270;">❄️</div>
+          </div>
+          <span class="star-name">朝美絢</span>
+        </div>
+
+        <div class="star-chip" data-star="音彩唯">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#2b8270;">❄️</div>
+          </div>
+          <span class="star-name">音彩唯</span>
+        </div>
+
+        <div class="star-chip" data-star="瀬央ゆりあ">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#2b8270;">❄️</div>
+          </div>
+          <span class="star-name">瀬央ゆりあ</span>
+        </div>
+
+        <div class="star-chip" data-star="縣千">
+          <div class="star-avatar-wrap">
+            <div class="star-avatar" style="color:#2b8270;">❄️</div>
+          </div>
+          <span class="star-name">縣千</span>
+        </div>
+
+        <!-- 💎 専科 -->
         <div class="star-chip" data-star="輝月ゆうま">
           <div class="star-avatar-wrap">
             <div class="star-avatar" style="color:#687987;">💎</div>
@@ -324,6 +332,25 @@
           </svg>
           すべて既読
         </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Latest News Highlights Digest (最新ニュース見どころ！)
+         ==================================================================== -->
+    <section id="newsDigestSection" class="news-digest-section">
+      <div class="digest-card">
+        <div class="digest-header">
+          <div class="digest-title-group">
+            <span class="digest-sparkle">✨</span>
+            <span class="digest-title">最新ニュース見どころ！</span>
+            <span id="digestBadge" class="digest-badge">未読厳選</span>
+          </div>
+          <span id="digestCounter" class="digest-counter"></span>
+        </div>
+        <div class="digest-body" id="digestBody">
+          <!-- Dynamically populated with 3-line highlights -->
+        </div>
       </div>
     </section>
 
