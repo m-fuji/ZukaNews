@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:30:27.867981",
-  "updated_str": "2026年09月30日 04:30",
+  "updated_at": "2026-09-30T14:42:11.905301",
+  "updated_str": "2026年09月30日 14:42",
   "total_count": 100,
   "articles": [
     {
@@ -9,7 +9,7 @@
       "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202608220000045.html",
       "source": "日刊スポーツ",
       "source_type": "media",
-      "published_at": "2026-09-30T04:30:27.867981",
+      "published_at": "2026-09-30T14:42:11.905301",
       "published_str": "9月12日07:59",
       "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609120000072-w200_0.jpg",
       "troupe": "star",
@@ -25,7 +25,7 @@
       "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202608080000047.html",
       "source": "日刊スポーツ",
       "source_type": "media",
-      "published_at": "2026-09-30T04:30:27.867981",
+      "published_at": "2026-09-30T14:42:11.905301",
       "published_str": "8月22日07:34",
       "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202608220000045-w200_0.jpg",
       "troupe": "flower",
@@ -41,7 +41,7 @@
       "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202605230000026.html",
       "source": "日刊スポーツ",
       "source_type": "media",
-      "published_at": "2026-09-30T04:30:27.867981",
+      "published_at": "2026-09-30T14:42:11.905301",
       "published_str": "8月08日07:38",
       "image": null,
       "troupe": "cosmos",
@@ -57,8 +57,8 @@
       "link": "https://kageki.hankyu.co.jp/news/20260909_001.html",
       "source": "宝塚歌劇公式",
       "source_type": "official",
-      "published_at": "2026-09-30T03:30:27.872171",
-      "published_str": "2026/09/30 03:30",
+      "published_at": "2026-09-30T13:42:11.908381",
+      "published_str": "2026/09/30 13:42",
       "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800&auto=format&fit=crop&q=80",
       "troupe": "flower",
       "troupe_name": "花組",
@@ -74,8 +74,8 @@
       "link": "https://natalie.mu/stage/news/690198",
       "source": "ステージナタリー",
       "source_type": "media",
-      "published_at": "2026-09-30T01:30:27.872171",
-      "published_str": "2026/09/30 01:30",
+      "published_at": "2026-09-30T11:42:11.908381",
+      "published_str": "2026/09/30 11:42",
       "image": "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?w=800&auto=format&fit=crop&q=80",
       "troupe": "star",
       "troupe_name": "星組",
@@ -84,6 +84,66 @@
         "詩ちづる"
       ],
       "summary": "星組トップスター暁千星とトップ娘役詩ちづるによる注目の話題作！横浜を舞台にした名作『あぶない刑事』の宝塚初上演にファンの期待が集まります。"
+    },
+    {
+      "id": "02c86bd96b81",
+      "title": "ⓒ宝塚歌劇 - 宝塚宙組11月福岡公演 来月4日チケット発売 - 写真・画像(1/1)",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1TUjVRTW1oVjRVam1XRFc5eUkxb3NKaDNwNVVKUTIxRTVWYm5nM1JaR2VNQkFDRFdwZWxsVFcwVmtKbll1OGlESFRkbE5heURzVEV6NWxVaw?oc=5",
+      "source": "西日本新聞me",
+      "source_type": "media",
+      "published_at": "2026-09-30T08:44:54",
+      "published_str": "2026/09/30 08:44",
+      "image": null,
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
+      "stars": [],
+      "summary": "ⓒ宝塚歌劇 - 宝塚宙組11月福岡公演 来月4日チケット発売 - 写真・画像(1/1)  西日本新聞me"
+    },
+    {
+      "id": "3f01f5655599",
+      "title": "宝塚宙組11月福岡公演 来月4日チケット発売",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uVHFWT0VlbGd6RzB4cE1VNlAxcU9MMFdjeXJKTnhvNTl0VmtsckJlSHpBejVyb2VKd3JKZFJpLUtaOVBNOUtlMnZFSER0aF9nbUZrRXl3?oc=5",
+      "source": "西日本新聞me",
+      "source_type": "media",
+      "published_at": "2026-09-30T08:30:00",
+      "published_str": "2026/09/30 08:30",
+      "image": null,
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
+      "stars": [],
+      "summary": "宝塚宙組11月福岡公演 来月4日チケット発売  西日本新聞me"
+    },
+    {
+      "id": "d6110c907548",
+      "title": "観劇８１年目の浜村淳　宝塚愛は「ピノチオ」から「エリザベート」まで　花組・一之瀬航季の雄姿見届ける",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeEhEb01Mckt2SUhrSEdpM01SRWgtTmt2Z25GVVVtdlY0bmJqWmF6NUxubEdoYTZhZVRkeEF1cy1jOUdvUnV0YU52dFF5X1FTVjdKMElsNmp4SzlQSDBLU0p2RVlnYWthNmM5SldYb2ptLWZqMWU2QUh2TWY0MlMtcUg0UFh4TFJLNkgzN25n0gGTAUFVX3lxTFBnbzNLVk5yUEVKTXc2OHFWOUp0X3U0eTU0UXpzODJfYjhIVm1mb2p6aDJQc0ZXSmlGdVdidW93Y2ZxZUlrcHdOVjdENUZnSUUtMnBKS0tjRnMxS0x2ZXJFUV9WZ05QNHRkUUdFX0pTN2xZV3FQNjJhRjEtREhiVEtERGs2TDB1cW0yMGhUN3hYVlN1VQ?oc=5",
+      "source": "ｄメニューニュース",
+      "source_type": "media",
+      "published_at": "2026-09-30T07:10:00",
+      "published_str": "2026/09/30 07:10",
+      "image": null,
+      "troupe": "flower",
+      "troupe_name": "花組",
+      "stars": [],
+      "summary": "観劇８１年目の浜村淳　宝塚愛は「ピノチオ」から「エリザベート」まで　花組・一之瀬航季の雄姿見届ける  ｄメニューニュース"
+    },
+    {
+      "id": "seed_005",
+      "title": "宙組トップスター桜木みなと＆トップ娘役春乃さくら！水美舞斗との強力布陣で魅せるダイナミックな舞台",
+      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202607250000046.html",
+      "source": "日刊スポーツ",
+      "source_type": "media",
+      "published_at": "2026-09-30T02:42:11.908381",
+      "published_str": "2026/09/30 02:42",
+      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202607250000046-w1300_0.jpg",
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
+      "stars": [
+        "桜木みなと",
+        "春乃さくら",
+        "水美舞斗"
+      ],
+      "summary": "宙組トップスター桜木みなとと春乃さくらを中心に、2番手水美舞斗、瑠風輝らが結集。情熱的でスケール感あふれる新作ミュージカルを上演。"
     },
     {
       "id": "d8dca80913b4",
@@ -100,31 +160,13 @@
       "summary": "おはようございます長雨の日本列島ですねあれから3年経ちましたいもこは同日大劇場公演を観ました何も知らずに、、、翌日は公演中止かと思いきや中止じゃなかったのでバウに行きましたあおくんが出演していたのでビックリしましたバウの帰りに対岸に手を合わせましたいもこはあれからずっと宙組公演には行けません当事者や傍観者が退団しないかぎり行きません美人姉妹どうしているのかなぁ天国で笑顔でいてくれる事を願うばかりで"
     },
     {
-      "id": "seed_005",
-      "title": "宙組トップスター桜木みなと＆トップ娘役春乃さくら！水美舞斗との強力布陣で魅せるダイナミックな舞台",
-      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202607250000046.html",
-      "source": "日刊スポーツ",
-      "source_type": "media",
-      "published_at": "2026-09-29T16:30:27.872171",
-      "published_str": "2026/09/29 16:30",
-      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202607250000046-w1300_0.jpg",
-      "troupe": "cosmos",
-      "troupe_name": "宙組",
-      "stars": [
-        "桜木みなと",
-        "春乃さくら",
-        "水美舞斗"
-      ],
-      "summary": "宙組トップスター桜木みなとと春乃さくらを中心に、2番手水美舞斗、瑠風輝らが結集。情熱的でスケール感あふれる新作ミュージカルを上演。"
-    },
-    {
       "id": "seed_006",
       "title": "星組トップスター礼真琴 スペシャル特集！圧倒的なカリスマと輝きでファンを魅了",
       "link": "https://kageki.hankyu.co.jp/news/index.html",
       "source": "宝塚歌劇公式",
       "source_type": "official",
-      "published_at": "2026-09-29T04:30:27.872171",
-      "published_str": "2026/09/29 04:30",
+      "published_at": "2026-09-29T14:42:11.908381",
+      "published_str": "2026/09/29 14:42",
       "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop&q=80",
       "troupe": "star",
       "troupe_name": "星組",
@@ -134,27 +176,13 @@
       "summary": "唯一無二の歌唱力と卓越したダンスで星組を牽引するトップスター礼真琴。最新特集やステージ情報にファンの熱い視線が集まる。"
     },
     {
-      "id": "524bf7038e60",
-      "title": "元宝塚宙組トップスター朝夏まなと「人生初のJKは楽しかったです笑」高校生制服姿アップ（日刊スポーツ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50NTl2XzFmSFdkOUg4cFN2Ym1JWkF5b0RzVC1kQmV5aXlCZnhVRWhHd1NiU2Q4SUQ4VnJhMWVQZVFRUXVhQm5IM1hVMW1SaXpsMWlCNmdCVF80VHFma3pXMFZmNEhtN3lYSmlLdTVvMy16Sm9mUVp0SV9zdThoNE0?oc=5",
-      "source": "Yahoo!ニュース",
-      "source_type": "media",
-      "published_at": "2026-09-29T02:14:26",
-      "published_str": "2026/09/29 02:14",
-      "image": null,
-      "troupe": "cosmos",
-      "troupe_name": "宙組",
-      "stars": [],
-      "summary": "元宝塚宙組トップスター朝夏まなと「人生初のJKは楽しかったです笑」高校生制服姿アップ（日刊スポーツ）  Yahoo!ニュース"
-    },
-    {
       "id": "seed_007",
       "title": "【観劇レポ】星組トップスター暁千星のダイナミックなダンス！詩ちづるとの息を呑むデュエットに熱狂",
       "link": "https://ameblo.jp/imoko3838/entry-12979042063.html",
       "source": "宝塚ファンのいもこブログ",
       "source_type": "fan",
-      "published_at": "2026-09-29T01:30:27.872171",
-      "published_str": "2026/09/29 01:30",
+      "published_at": "2026-09-29T11:42:11.908381",
+      "published_str": "2026/09/29 11:42",
       "image": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&auto=format&fit=crop&q=80",
       "troupe": "star",
       "troupe_name": "星組",
@@ -171,8 +199,8 @@
       "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202608080000047.html",
       "source": "日刊スポーツ",
       "source_type": "media",
-      "published_at": "2026-09-28T22:30:27.872171",
-      "published_str": "2026/09/28 22:30",
+      "published_at": "2026-09-29T08:42:11.908381",
+      "published_str": "2026/09/29 08:42",
       "image": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?w=800&auto=format&fit=crop&q=80",
       "troupe": "flower",
       "troupe_name": "花組",
@@ -182,6 +210,114 @@
         "聖乃あすか"
       ],
       "summary": "花組トップスター永久輝せあが全国ツアー主演。クールなマジシャン役で満場の拍手を浴び、新生花組の充実ぶりを見せつけた。"
+    },
+    {
+      "id": "524bf7038e60",
+      "title": "元宝塚宙組トップスター朝夏まなと「人生初のJKは楽しかったです笑」高校生制服姿アップ（日刊スポーツ）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50NTl2XzFmSFdkOUg4cFN2Ym1JWkF5b0RzVC1kQmV5aXlCZnhVRWhHd1NiU2Q4SUQ4VnJhMWVQZVFRUXVhQm5IM1hVMW1SaXpsMWlCNmdCVF80VHFma3pXMFZmNEhtN3lYSmlLdTVvMy16Sm9mUVp0SV9zdThoNE0?oc=5",
+      "source": "Yahoo!ニュース",
+      "source_type": "media",
+      "published_at": "2026-09-29T02:14:26",
+      "published_str": "2026/09/29 02:14",
+      "image": null,
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
+      "stars": [],
+      "summary": "元宝塚宙組トップスター朝夏まなと「人生初のJKは楽しかったです笑」高校生制服姿アップ（日刊スポーツ）  Yahoo!ニュース"
+    },
+    {
+      "id": "c600ccabd293",
+      "title": "宝塚歌劇団、トップスター“ぬいぐるみ化” 月組・鳳月杏、雪組・朝美絢、星組・暁千星、宙組・桜木みなと【概要】",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iZnR2TTlJTldZaFdzanFoU1ozdURUVUdMVGNwbDJncE1ScEtXbldIM0RVZWJIdzFmSmFDeG50M0VNTHRiY1IzbHctaWRhb3pZcjI4MUgydGJCQ2NPazFjMEk2cGVFeFc3YkhxbGpPRQ?oc=5",
+      "source": "山陽新聞",
+      "source_type": "media",
+      "published_at": "2026-09-28T19:14:31",
+      "published_str": "2026/09/28 19:14",
+      "image": null,
+      "troupe": "star",
+      "troupe_name": "星組",
+      "stars": [
+        "暁千星",
+        "桜木みなと",
+        "鳳月杏",
+        "朝美絢"
+      ],
+      "summary": "宝塚歌劇団、トップスター“ぬいぐるみ化” 月組・鳳月杏、雪組・朝美絢、星組・暁千星、宙組・桜木みなと【概要】  山陽新聞"
+    },
+    {
+      "id": "4d0ff94de729",
+      "title": "ニュースNEWS",
+      "link": "https://kageki.hankyu.co.jp/news/20260930_001.html",
+      "source": "宝塚歌劇公式",
+      "source_type": "official",
+      "published_at": "2026-09-30T14:42:11.905301",
+      "published_str": "2026.09.30",
+      "image": "https://kageki.hankyu.co.jp/common/images/label_new_r_s.png",
+      "troupe": "all",
+      "troupe_name": "全体・その他",
+      "stars": [],
+      "summary": "ニュースNEWS"
+    },
+    {
+      "id": "c17bcb4a16a1",
+      "title": "月組トップ鳳月杏「今だから打ち込めた」退団目前、さらなる進化　プレサヨナラ公演「NINE」\n[9月26日07:28]",
+      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202609260000032.html",
+      "source": "日刊スポーツ",
+      "source_type": "media",
+      "published_at": "2026-09-30T14:42:11.905301",
+      "published_str": "9月26日07:28",
+      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609260000032-w200_0.jpg",
+      "troupe": "moon",
+      "troupe_name": "月組",
+      "stars": [
+        "鳳月杏"
+      ],
+      "summary": "月組トップ鳳月杏「今だから打ち込めた」退団目前、さらなる進化　プレサヨナラ公演「NINE」\n[9月26日07:28]"
+    },
+    {
+      "id": "a8c54ccd469e",
+      "title": "雪組新トップ娘役音彩唯　トップ朝美絢とともに目指すコンビ像　美穂圭子への思い／インタビュー\n[9月12日07:59]",
+      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202609120000072.html",
+      "source": "日刊スポーツ",
+      "source_type": "media",
+      "published_at": "2026-09-30T14:42:11.905301",
+      "published_str": "9月26日07:28",
+      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609260000032-w200_0.jpg",
+      "troupe": "snow",
+      "troupe_name": "雪組",
+      "stars": [
+        "朝美絢",
+        "音彩唯"
+      ],
+      "summary": "雪組新トップ娘役音彩唯　トップ朝美絢とともに目指すコンビ像　美穂圭子への思い／インタビュー\n[9月12日07:59]"
+    },
+    {
+      "id": "47d737ca0662",
+      "title": "明日吹く風のために 天海祐希月組トップ 私が宝塚という空間で過ごした時間を綴る！ 明日吹く風のために 天海祐希月組トップ 私が宝塚という空間で",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9IRk84SFJMbVJuUkVNWGw1OUNwY2hMUEVtTzh5SjczcGdVcU5LNXN4Zm1HS2JTbUcwcnJfOEprZmxtUVh3bzBKWmxxUktBb3N6NTlvb3hR?oc=5",
+      "source": "theweereview.com",
+      "source_type": "media",
+      "published_at": "2026-09-30T14:20:21",
+      "published_str": "2026/09/30 14:20",
+      "image": null,
+      "troupe": "moon",
+      "troupe_name": "月組",
+      "stars": [],
+      "summary": "明日吹く風のために 天海祐希月組トップ 私が宝塚という空間で過ごした時間を綴る！ 明日吹く風のために 天海祐希月組トップ 私が宝塚という空間で  theweereview.com"
+    },
+    {
+      "id": "2cdf16590697",
+      "title": "柚香光 ミュージカル「十二国記」来夏アリーナライブ開催に「どうします皆様！？」（スポーツ報知）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VdWFaWHdMQlRiT19xTXFDWUNwc2J0dW1QR0lkaFhXaGkycXFTZEJKSnkyalJTZUZDY2pqMEc2UWRrclZRTWpadDYyYWJCYmdVVVJQZkxOempITWV1d0VoM3R5ZVI5N0YzTjVHY3RvbVBxY0EwVXplWGlhQjNTb00?oc=5",
+      "source": "Yahoo!ニュース",
+      "source_type": "media",
+      "published_at": "2026-09-30T11:11:36",
+      "published_str": "2026/09/30 11:11",
+      "image": null,
+      "troupe": "all",
+      "troupe_name": "全体・その他",
+      "stars": [],
+      "summary": "柚香光 ミュージカル「十二国記」来夏アリーナライブ開催に「どうします皆様！？」（スポーツ報知）  Yahoo!ニュース"
     },
     {
       "id": "c46a2a4d2036",
@@ -198,65 +334,32 @@
       "summary": "元宝塚歌劇団花組の男役 第2子男児出産を報告 扇けい「念願の自宅出産での水中出産」  スポニチ Sponichi Annex"
     },
     {
-      "id": "c35a2b995f06",
-      "title": "【記事全文】元宝塚歌劇団花組の男役 第2子男児出産を報告 扇けい「念願の自宅出産での水中出産」",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQc2RrOTU0MHZwX2dGQWZyYUpsVml6SXJYdzhuQnFuZ0hzWERoYzloeG9uTWNPQjdaejhCcVVMdDVYWkE0RXZmVUdQZzg3WnFVemVIT05lQmd0Y29kMVl3SmIxc0sxTDZNZVh3bjNZZFoyc2haTWprQ1N1Tmc0Z2lFY1gzM1kxMFhTM3FmN3hLUUNsdllNSlB6UGd2NA?oc=5",
-      "source": "スポニチ Sponichi Annex",
+      "id": "b77308f4ff2f",
+      "title": "舞風りら、サンダーバードの「憧れ」ペネロープをイメージしたワンピースで60周年トークショー（日刊スポーツ）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1idkhXV2psRUtKQWNEYkg4bkV1Q0JfNEhrTEUydEtIdU55Rnd5S0FoeU5QS25OM0FiazVmekVPcElHczd1MnRUdDA3QzRrX21yeUwzZDVsbDlPY1FDSVBqakN4ZktMSkdhMWRXa1JFbV9YOEE0RWVPTTJDRlhtWG8?oc=5",
+      "source": "Yahoo!ニュース",
       "source_type": "media",
-      "published_at": "2026-09-28T02:30:00",
-      "published_str": "2026/09/28 02:30",
+      "published_at": "2026-09-30T10:27:34",
+      "published_str": "2026/09/30 10:27",
       "image": null,
-      "troupe": "flower",
-      "troupe_name": "花組",
-      "stars": [],
-      "summary": "【記事全文】元宝塚歌劇団花組の男役 第2子男児出産を報告 扇けい「念願の自宅出産での水中出産」  スポニチ Sponichi Annex"
-    },
-    {
-      "id": "4d0ff94de729",
-      "title": "ニュースNEWS",
-      "link": "https://kageki.hankyu.co.jp/news/20260930_001.html",
-      "source": "宝塚歌劇公式",
-      "source_type": "official",
-      "published_at": "2026-09-30T04:30:27.867981",
-      "published_str": "2026.09.30",
-      "image": "https://kageki.hankyu.co.jp/common/images/label_new_r_s.png",
       "troupe": "all",
       "troupe_name": "全体・その他",
       "stars": [],
-      "summary": "ニュースNEWS"
+      "summary": "舞風りら、サンダーバードの「憧れ」ペネロープをイメージしたワンピースで60周年トークショー（日刊スポーツ）  Yahoo!ニュース"
     },
     {
-      "id": "c17bcb4a16a1",
-      "title": "月組トップ鳳月杏「今だから打ち込めた」退団目前、さらなる進化　プレサヨナラ公演「NINE」\n[9月26日07:28]",
-      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202609260000032.html",
-      "source": "日刊スポーツ",
+      "id": "c436a02fefdc",
+      "title": "柚香光、「十二国記」アリーナライブ開催を発表「楽しみでしょうがない」（テレビ朝日系（ANN））",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XTnFaZmlhMHdxNnp0aTdQalpDZklzM1l2WVB4dHAwckVfM1hTcTZrUmRrX2tqNTlQSzhTQ2IwMXgzNHBuRm8zSTBVem5oS2U2ZWNHWjZiMTI2b09sY2JDYXdfcGdIRm9ROHpTV2NpdmpiWnpYRno1X0xNcmNjUFU?oc=5",
+      "source": "Yahoo!ニュース",
       "source_type": "media",
-      "published_at": "2026-09-30T04:30:27.867981",
-      "published_str": "9月26日07:28",
-      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609260000032-w200_0.jpg",
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [
-        "鳳月杏"
-      ],
-      "summary": "月組トップ鳳月杏「今だから打ち込めた」退団目前、さらなる進化　プレサヨナラ公演「NINE」\n[9月26日07:28]"
-    },
-    {
-      "id": "a8c54ccd469e",
-      "title": "雪組新トップ娘役音彩唯　トップ朝美絢とともに目指すコンビ像　美穂圭子への思い／インタビュー\n[9月12日07:59]",
-      "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202609120000072.html",
-      "source": "日刊スポーツ",
-      "source_type": "media",
-      "published_at": "2026-09-30T04:30:27.867981",
-      "published_str": "9月26日07:28",
-      "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609260000032-w200_0.jpg",
-      "troupe": "snow",
-      "troupe_name": "雪組",
-      "stars": [
-        "朝美絢",
-        "音彩唯"
-      ],
-      "summary": "雪組新トップ娘役音彩唯　トップ朝美絢とともに目指すコンビ像　美穂圭子への思い／インタビュー\n[9月12日07:59]"
+      "published_at": "2026-09-30T10:12:16",
+      "published_str": "2026/09/30 10:12",
+      "image": null,
+      "troupe": "all",
+      "troupe_name": "全体・その他",
+      "stars": [],
+      "summary": "柚香光、「十二国記」アリーナライブ開催を発表「楽しみでしょうがない」（テレビ朝日系（ANN））  Yahoo!ニュース"
     },
     {
       "id": "seed_003",
@@ -264,8 +367,8 @@
       "link": "https://kageki.hankyu.co.jp/news/20260908_001.html",
       "source": "宝塚歌劇公式",
       "source_type": "official",
-      "published_at": "2026-09-29T23:30:27.872171",
-      "published_str": "2026/09/29 23:30",
+      "published_at": "2026-09-30T09:42:11.908381",
+      "published_str": "2026/09/30 09:42",
       "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&fit=crop&q=80",
       "troupe": "moon",
       "troupe_name": "月組",
@@ -282,8 +385,8 @@
       "link": "https://www.nikkansports.com/entertainment/column/takarazuka/news/202609120000072.html",
       "source": "日刊スポーツ",
       "source_type": "media",
-      "published_at": "2026-09-29T20:30:27.872171",
-      "published_str": "2026/09/29 20:30",
+      "published_at": "2026-09-30T06:42:11.908381",
+      "published_str": "2026/09/30 06:42",
       "image": "https://www.nikkansports.com/entertainment/column/takarazuka/news/img/202609120000072-w1300_0.jpg",
       "troupe": "snow",
       "troupe_name": "雪組",
@@ -293,6 +396,24 @@
         "瀬央ゆりあ"
       ],
       "summary": "雪組トップスター朝美絢と新トップ娘役音彩唯による新生雪組が本格始動。専科から異動した2番手スター瀬央ゆりあとの息もぴったり。"
+    },
+    {
+      "id": "seed_011",
+      "title": "宙組・水美舞斗の圧巻のダンス！トップスター桜木みなとと共に刻む新たな歴史",
+      "link": "https://kageki.hankyu.co.jp/news/20260901_004.html",
+      "source": "宝塚歌劇公式",
+      "source_type": "official",
+      "published_at": "2026-09-27T14:42:11.908381",
+      "published_str": "2026/09/27 14:42",
+      "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&auto=format&fit=crop&q=80",
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
+      "stars": [
+        "水美舞斗",
+        "桜木みなと",
+        "春乃さくら"
+      ],
+      "summary": "宙組へ異動し2番手スターとして躍動する水美舞斗。桜木みなとトップ体制の宙組に更なるダイナミズムと熱気をもたらしています。"
     },
     {
       "id": "e9ce01eff071",
@@ -323,24 +444,6 @@
       "summary": "月組『NINE』感想・賛否両論！問題作上演にひと言  宝塚観劇ブログ"
     },
     {
-      "id": "seed_011",
-      "title": "宙組・水美舞斗の圧巻のダンス！トップスター桜木みなとと共に刻む新たな歴史",
-      "link": "https://kageki.hankyu.co.jp/news/20260901_004.html",
-      "source": "宝塚歌劇公式",
-      "source_type": "official",
-      "published_at": "2026-09-27T04:30:27.872171",
-      "published_str": "2026/09/27 04:30",
-      "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&auto=format&fit=crop&q=80",
-      "troupe": "cosmos",
-      "troupe_name": "宙組",
-      "stars": [
-        "水美舞斗",
-        "桜木みなと",
-        "春乃さくら"
-      ],
-      "summary": "宙組へ異動し2番手スターとして躍動する水美舞斗。桜木みなとトップ体制の宙組に更なるダイナミズムと熱気をもたらしています。"
-    },
-    {
       "id": "8ee5a37bf5af",
       "title": "【宝塚ＯＧ訪問】元花組トップ娘役・華優希、舞台に朝ドラに飛躍の秋 「勉強することばかり」１１月は名作「星影の人」でヒロイン演じる",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01RkdocndYNWQ0VUVLVG5lclFIcUt1cjh4ZmZlTUZ2b1BUa3VRamZobk0xMXB4Z1ZBdnNuOE9xVkliXy1SQTlWNWowcnYxOWlTLUM0VzhMbkdtTkpDV3VWS3Bn?oc=5",
@@ -355,8 +458,8 @@
       "summary": "【宝塚ＯＧ訪問】元花組トップ娘役・華優希、舞台に朝ドラに飛躍の秋 「勉強することばかり」１１月は名作「星影の人」でヒロイン演じる  スポーツ報知"
     },
     {
-      "id": "419db9d1b7c0",
-      "title": "動画配信サービス“TAKARAZUKA SQUARE【タカスク】”ラインアップ更新！",
+      "id": "d9490a4f64ad",
+      "title": "動画配信サービス“TAKARAZUKA SQUARE【タカスク】”ラインアップ更新！ | ニュース | 宝塚歌劇公式ホームページ",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xRF9zd2J2eGlrMG41RTN5cHdhaVNiTTVVRklkdV9vck9qQnl2LUFhTXExTnZvMjlSeHVGYmZhYmdsZ1QwOG91cURJbzFXU3VfdDQ5OTdIbmgzajR1amNN?oc=5",
       "source": "宝塚歌劇公式ホームページ",
       "source_type": "media",
@@ -366,7 +469,7 @@
       "troupe": "all",
       "troupe_name": "全体・その他",
       "stars": [],
-      "summary": "動画配信サービス“TAKARAZUKA SQUARE【タカスク】”ラインアップ更新！  宝塚歌劇公式ホームページ"
+      "summary": "動画配信サービス“TAKARAZUKA SQUARE【タカスク】”ラインアップ更新！ | ニュース | 宝塚歌劇公式ホームページ  宝塚歌劇公式ホームページ"
     },
     {
       "id": "a4180f56e278",
@@ -383,18 +486,22 @@
       "summary": "【テレビ】日本テレビ「ヒルナンデス！」出演のお知らせ | ニュース | 宝塚歌劇公式ホームページ  宝塚歌劇公式ホームページ"
     },
     {
-      "id": "537f73f831df",
-      "title": "【FNS歌謡祭】M!LK、宝塚歌劇団花組とコラボ「惚れちゃうぜ滅！」「景気が良い！」 花組の粋なサプライズも話題に",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lZ2t1MzBXZDUyT2ZHWjAtUzFNbU4xeENTUWNhUTR3Y1JfNjlwVFRaVHB0am5FQkhhSEFIOXJ0R0pwaE9tS0ZuYXlUTjFJTG11b3cxdG9Wckoydl8yd0hnQzJWQUZIek5BS3E1Rm5hQ1VlLVE?oc=5",
-      "source": "sanyonews.jp",
-      "source_type": "media",
-      "published_at": "2026-09-26T07:00:00",
-      "published_str": "2026/09/26 07:00",
-      "image": null,
-      "troupe": "flower",
-      "troupe_name": "花組",
-      "stars": [],
-      "summary": "【FNS歌謡祭】M!LK、宝塚歌劇団花組とコラボ「惚れちゃうぜ滅！」「景気が良い！」 花組の粋なサプライズも話題に  sanyonews.jp"
+      "id": "seed_009",
+      "title": "雪組トップスター朝美絢と新トップ娘役音彩唯が紡ぐ新たな絆！大劇場公演開幕",
+      "link": "https://kageki.hankyu.co.jp/news/20260904_003.html",
+      "source": "宝塚歌劇公式",
+      "source_type": "official",
+      "published_at": "2026-09-28T14:42:11.908381",
+      "published_str": "2026/09/28 14:42",
+      "image": "https://images.unsplash.com/photo-1518972559570-7cc1309f3229?w=800&auto=format&fit=crop&q=80",
+      "troupe": "snow",
+      "troupe_name": "雪組",
+      "stars": [
+        "朝美絢",
+        "音彩唯",
+        "瀬央ゆりあ"
+      ],
+      "summary": "雪組トップスター朝美絢を中心に、新トップ娘役音彩唯、2番手スター瀬央ゆりあが織りなす華麗なステージ。温かみのある歌声と華やかな演技で魅了。"
     },
     {
       "id": "20dfa3a3acad",
@@ -409,6 +516,24 @@
       "troupe_name": "全体・その他",
       "stars": [],
       "summary": "Snow Man、レア映像満載な名曲＆名シーン集 M!LK×宝塚歌劇団・浜崎あゆみ「ayu ready？」秘蔵セッションなど名コラボ特集も  モデルプレス"
+    },
+    {
+      "id": "seed_010",
+      "title": "【初日レポ】月組『NINE』初日観劇！鳳月杏の圧倒的な大人の魅力と天紫珠李の美しさ",
+      "link": "https://ameblo.jp/imoko3838/entry-12978350163.html",
+      "source": "宝塚ファンのいもこブログ",
+      "source_type": "fan",
+      "published_at": "2026-09-28T10:42:11.908381",
+      "published_str": "2026/09/28 10:42",
+      "image": "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&auto=format&fit=crop&q=80",
+      "troupe": "moon",
+      "troupe_name": "月組",
+      "stars": [
+        "鳳月杏",
+        "天紫珠李",
+        "風間柚乃"
+      ],
+      "summary": "月組東急シアターオーブ公演『NINE』の初日観劇記！鳳月杏の色気と哀愁漂う大人の男役像、天紫珠李と風間柚乃の好演を熱く語る。"
     },
     {
       "id": "1a434b5fed95",
@@ -439,56 +564,6 @@
       "summary": "いざ宝塚へ！familiarで【リアちゃんめじるしチャーム】をGET！  lee.hpplus.jp"
     },
     {
-      "id": "seed_009",
-      "title": "雪組トップスター朝美絢と新トップ娘役音彩唯が紡ぐ新たな絆！大劇場公演開幕",
-      "link": "https://kageki.hankyu.co.jp/news/20260904_003.html",
-      "source": "宝塚歌劇公式",
-      "source_type": "official",
-      "published_at": "2026-09-28T04:30:27.872171",
-      "published_str": "2026/09/28 04:30",
-      "image": "https://images.unsplash.com/photo-1518972559570-7cc1309f3229?w=800&auto=format&fit=crop&q=80",
-      "troupe": "snow",
-      "troupe_name": "雪組",
-      "stars": [
-        "朝美絢",
-        "音彩唯",
-        "瀬央ゆりあ"
-      ],
-      "summary": "雪組トップスター朝美絢を中心に、新トップ娘役音彩唯、2番手スター瀬央ゆりあが織りなす華麗なステージ。温かみのある歌声と華やかな演技で魅了。"
-    },
-    {
-      "id": "seed_010",
-      "title": "【初日レポ】月組『NINE』初日観劇！鳳月杏の圧倒的な大人の魅力と天紫珠李の美しさ",
-      "link": "https://ameblo.jp/imoko3838/entry-12978350163.html",
-      "source": "宝塚ファンのいもこブログ",
-      "source_type": "fan",
-      "published_at": "2026-09-28T00:30:27.872171",
-      "published_str": "2026/09/28 00:30",
-      "image": "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&auto=format&fit=crop&q=80",
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [
-        "鳳月杏",
-        "天紫珠李",
-        "風間柚乃"
-      ],
-      "summary": "月組東急シアターオーブ公演『NINE』の初日観劇記！鳳月杏の色気と哀愁漂う大人の男役像、天紫珠李と風間柚乃の好演を熱く語る。"
-    },
-    {
-      "id": "44b686289781",
-      "title": "宝塚史上屈指の歌唱力の純名里沙「私、踊りもできるんですよ（笑い）。ミュージカルをやりたい」",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBMdWdTc0FKakJDU3I3cXBJMEo5MFY1YXpJVzRkdW9vb2ExQ2dzLXdreUQtUTJLV0NoQXBnQXVYZWdwTGd3ZHdTWDdlY3hUSVM5LWhBTURYUzRiUlJoczBR?oc=5",
-      "source": "ライブドアニュース",
-      "source_type": "media",
-      "published_at": "2026-09-27T20:00:00",
-      "published_str": "2026/09/27 20:00",
-      "image": null,
-      "troupe": "all",
-      "troupe_name": "全体・その他",
-      "stars": [],
-      "summary": "宝塚史上屈指の歌唱力の純名里沙「私、踊りもできるんですよ（笑い）。ミュージカルをやりたい」  ライブドアニュース"
-    },
-    {
       "id": "97ff7061d625",
       "title": "元宝塚歌劇団星組トップスター・礼真琴の凄さが凝縮！圧倒的な歌唱と迫力の殺陣で魅せる『阿弖流為 -ATERUI-』",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80Wm1wVk1DXzc2dEM1N012aW1NRzctWkU5dHM5Y2plLUhtSnI5MDhpWnBKTmdwUDJwbmwzNUxwWDluenNZbFo5ZXBKakZoS1VwZmdDZFNQQXBVTzQ?oc=5",
@@ -517,6 +592,26 @@
       "troupe_name": "星組",
       "stars": [],
       "summary": "支配と戦う男の友情をエネルギッシュに…宝塚歌劇団星組「ＲＲＲ」、大ヒットインド映画原作：地域ニュース  読売新聞"
+    },
+    {
+      "id": "seed_012",
+      "title": "「宝塚GRAPH」最新号発売！5組トップスター（永久輝せあ・鳳月杏・朝美絢・暁千星・桜木みなと）豪華競演",
+      "link": "https://kageki.hankyu.co.jp/news/20260901_001.html",
+      "source": "宝塚歌劇公式",
+      "source_type": "official",
+      "published_at": "2026-09-27T09:42:11.908381",
+      "published_str": "2026/09/27 09:42",
+      "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80",
+      "troupe": "all",
+      "troupe_name": "全体・その他",
+      "stars": [
+        "永久輝せあ",
+        "鳳月杏",
+        "朝美絢",
+        "暁千星",
+        "桜木みなと"
+      ],
+      "summary": "宝塚GRAPH最新号の巻頭グラビア特集。永久輝せあ、鳳月杏、朝美絢、暁千星、桜木みなとの5組トップスターの特別な撮り下ろし写真と特別座談会を収録。"
     },
     {
       "id": "602e9c692cf2",
@@ -561,12 +656,12 @@
       "summary": "宝塚歌劇 月組 東急シアターオーブ公演『NINE』ライブ中継｜9/26(土)、9/27(日)映画館生中継！  LIVE VIEWING JAPAN"
     },
     {
-      "id": "c6c14e07deeb",
-      "title": "月組トップスター・鳳月杏「新しい魅力」 男役でも「女役さんに委ねる」サヨナラプレ公演",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBnLTRJME5McEItX1FYQ3F3UDhxTUJSZ2RqUnlsQk5PLTkzMWZ6SXFReExvSUEwdk5xdlNsNU1CUnBSY2lIdnNVM0dnanBMS0Zqb09tYkdzUXA0aVVwbWxkcTZB?oc=5",
-      "source": "スポーツ報知",
+      "id": "61aab4b7a8f6",
+      "title": "月組トップスター・鳳月杏「新しい魅力」 男役でも「女役さんに委ねる」サヨナラプレ公演 (スポーツ報知)",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORXEtX3NiMDljVllRWXhCTk91YzFVLTF6dDhaS1FISERaMVJ4ZlpDWVVTREJRU05RYUNlUE1FRDRRSnlIOUh1cDZVc0VLOVZ1OVZFZm12TnZSVnBSS0VvQ19Ud1BSa190MnZ4M3RMNU5oeHZKUER5cTY1ZU04aEZ1VmxiS1BIOWtBa1hHcTln?oc=5",
+      "source": "Yahoo!ニュース",
       "source_type": "media",
-      "published_at": "2026-09-27T01:00:00",
+      "published_at": "2026-09-27T01:00:02",
       "published_str": "2026/09/27 01:00",
       "image": null,
       "troupe": "moon",
@@ -574,27 +669,7 @@
       "stars": [
         "鳳月杏"
       ],
-      "summary": "月組トップスター・鳳月杏「新しい魅力」 男役でも「女役さんに委ねる」サヨナラプレ公演  スポーツ報知"
-    },
-    {
-      "id": "seed_012",
-      "title": "「宝塚GRAPH」最新号発売！5組トップスター（永久輝せあ・鳳月杏・朝美絢・暁千星・桜木みなと）豪華競演",
-      "link": "https://kageki.hankyu.co.jp/news/20260901_001.html",
-      "source": "宝塚歌劇公式",
-      "source_type": "official",
-      "published_at": "2026-09-26T23:30:27.872171",
-      "published_str": "2026/09/26 23:30",
-      "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80",
-      "troupe": "all",
-      "troupe_name": "全体・その他",
-      "stars": [
-        "永久輝せあ",
-        "鳳月杏",
-        "朝美絢",
-        "暁千星",
-        "桜木みなと"
-      ],
-      "summary": "宝塚GRAPH最新号の巻頭グラビア特集。永久輝せあ、鳳月杏、朝美絢、暁千星、桜木みなとの5組トップスターの特別な撮り下ろし写真と特別座談会を収録。"
+      "summary": "月組トップスター・鳳月杏「新しい魅力」 男役でも「女役さんに委ねる」サヨナラプレ公演 (スポーツ報知)  Yahoo!ニュース"
     },
     {
       "id": "833e1a64ce18",
@@ -653,20 +728,6 @@
       "summary": "【記事全文】宝塚星組新人公演 入団5年目の馳琉輝堂々の初主演「今日感じたことを今後に生かしたい」  スポニチ Sponichi Annex"
     },
     {
-      "id": "f5ca471dfc07",
-      "title": "宝塚トップ娘役＆朝ドラヒロイン純名里沙「どんな編成でも、どこでも歌えるのが歌手」（日刊スポーツ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BaldSNi1vNzV4U3VTWHBKU2k0SktlVVhwUk5hR0R1WU9jMm9pUnVKNHE2WUdROUZ5UzNlMFN3X0JMTllEekZpVlNwVzRGcHFkMFdLTGx5MkVrV0ZNOWlXS0N4bzYzdnA2NUJnUDhKTlZRdmJBellGWjZqMGNxUzQ?oc=5",
-      "source": "Yahoo!ニュース",
-      "source_type": "media",
-      "published_at": "2026-09-26T20:00:03",
-      "published_str": "2026/09/26 20:00",
-      "image": null,
-      "troupe": "all",
-      "troupe_name": "全体・その他",
-      "stars": [],
-      "summary": "宝塚トップ娘役＆朝ドラヒロイン純名里沙「どんな編成でも、どこでも歌えるのが歌手」（日刊スポーツ）  Yahoo!ニュース"
-    },
-    {
       "id": "2ece64516db6",
       "title": "〈華宝塚〉唯一無二の斬新さを 宙組・鷹翔千空",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lRy14bFQyOXhGUzBJOGtMcjYyY2lya0U3Y2pIZl8xVjlFT1NpNWd5UFpPNlg5M09mdFV0MDlGLUQ0MU53bFJJLTg3aUFhYlV6S0Zn?oc=5",
@@ -681,10 +742,10 @@
       "summary": "〈華宝塚〉唯一無二の斬新さを 宙組・鷹翔千空  東京新聞"
     },
     {
-      "id": "0eed38d63fee",
+      "id": "4c84853faed5",
       "title": "三田寛子「きゃっ待ちに待った」宝塚雪組公演に興奮「小学生からヅカファンです」",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9nc3VxNTRoMmsweE1HMHdFZEpIZUJkTlBLVEVLMGlYaktxcUgxN0VLNjdvUWY2Mk5kNDAtUUN2N0tmRy1VVERtQ2ZEY3g4LTFFUjhsYXRNSmR5X3VmLWVxLWZjRzlfd2Y0Q0tOY05GcXRvZVFVZUJmYkFJMXjSAX9BVV95cUxQWnZ3ZmNyWTF0VmpMSVJlLVZlLWZGWjdxd3BfNE01aXRtY3kwcGRFaHA0dWZNVnlSM0dnaUZXZXZweXNmU2NaRzVHdTFxeVdzQ3dxX00wRjR5bW9XYUpMOXNUX0NVcjV0ZnBtT3BkbHdzYktUWGtZUDBOdGtES0JJ?oc=5",
-      "source": "日刊スポーツ",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY0VyZVNON2JGaTVfblgxN09jcWtpS2s4MHc3cFpiX2tkdS1fR2JYXzdobkVPTjRMamxTOFNQT3VBLUFKYk5CVzJJejdUX3ozTW1NM0V6UDBqalBUMDNkNzFfRVZodnNzYWEtcThDa2x3bGNQS3hEeHdaeTFoTmtQR1Q2SXdEaFpOZ20tblhwUXIyTHM2cHZGSHdoMEhwNmfSAaQBQVVfeXFMUGlpb0hRX2JZWHpld19rZmhxMXR5cjIwbTIyY25ndVFPTFcxcTZnYVBVZXpTb1NJTG5VamtDT0N2UEs0a3U1cHI3YTQyNHotR3F4SjFxNDVTb0dLaksyclNPbEkyWnV2SzB6cVFWMTZzWU5YRlRyVEZtOXZNcUI3R2lpMllzTWxDSnBQRm5lRzhuNDhRcUhVMEpqX01QenAwcmxzeEs?oc=5",
+      "source": "ｄメニューニュース",
       "source_type": "media",
       "published_at": "2026-09-26T00:55:00",
       "published_str": "2026/09/26 00:55",
@@ -692,12 +753,26 @@
       "troupe": "snow",
       "troupe_name": "雪組",
       "stars": [],
-      "summary": "三田寛子「きゃっ待ちに待った」宝塚雪組公演に興奮「小学生からヅカファンです」  日刊スポーツ"
+      "summary": "三田寛子「きゃっ待ちに待った」宝塚雪組公演に興奮「小学生からヅカファンです」  ｄメニューニュース"
     },
     {
-      "id": "7564ac6ce89c",
-      "title": "VIVANT出演の元宝塚月組トップスターは“丸太女優”堺雅人のワードセンスに「ヤバイですよね」 (日刊スポーツ)",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNc1FOQjhRek05VVZpVG84LW1TdkMzZGlMN3V6ckpncndmZjg4RmNHRG56Z0NqejhvWlhxNzhfSnRPdEtwREgwT19qQkN4YkQyVU5jNm1BemxfckVSUTZHZUFNdG41U21ITUoxcVVtNWQzZC1yd1BhR0tpSU8wVUp2dXItUnhkaXJTX3JFQnpn?oc=5",
+      "id": "d059ed6d235a",
+      "title": "元宝塚歌劇団花組トップスターの柚香光が音声ガイドナビゲーターを担当　『少女漫画・インフィニティ』10月から国立新美術館にて",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5FX0xPZkZSdzJpcDhQWHFNcnFKX29NR2g3U3VvYlZkZjN1WmZxWTZsWEtZcHBveXJaV3VVUGxEZGVodUdNZ3d2ZXZoUmdQSG_SAVRBVV95cUxQWW1sb29wUk96MmNTdDRWSzNkd25paDg2eDRYNjBkNENSVG1lNEhHZjRiWThoeWpHWmloX1hIbGozZ3Y1M2pOeWtzTmR0WWV2dnhjYWc?oc=5",
+      "source": "エンタメ特化型情報メディア スパイス",
+      "source_type": "media",
+      "published_at": "2026-09-23T03:00:00",
+      "published_str": "2026/09/23 03:00",
+      "image": null,
+      "troupe": "flower",
+      "troupe_name": "花組",
+      "stars": [],
+      "summary": "元宝塚歌劇団花組トップスターの柚香光が音声ガイドナビゲーターを担当　『少女漫画・インフィニティ』10月から国立新美術館にて  エンタメ特化型情報メディア スパイス"
+    },
+    {
+      "id": "24a05d7290fd",
+      "title": "VIVANT出演の元宝塚月組トップスターは“丸太女優”堺雅人のワードセンスに「ヤバイですよね」（日刊スポーツ）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xM1d5NUxPcFVVdHZTdVRWUXZsOHdUVzJFdE1kWVJXSW41aWhlNGZjMVdQZ1VKR0xqNWtPeHJtd0NqZjBvYkFjNXlzb1lSUFMycW9wZHd2OUp3Z21rNng3YTJvODAtdHpJUnBJYy0zZHItZUw5VU1vSC1mcHBuMFk?oc=5",
       "source": "Yahoo!ニュース",
       "source_type": "media",
       "published_at": "2026-09-25T08:32:50",
@@ -706,35 +781,21 @@
       "troupe": "moon",
       "troupe_name": "月組",
       "stars": [],
-      "summary": "VIVANT出演の元宝塚月組トップスターは“丸太女優”堺雅人のワードセンスに「ヤバイですよね」 (日刊スポーツ)  Yahoo!ニュース"
+      "summary": "VIVANT出演の元宝塚月組トップスターは“丸太女優”堺雅人のワードセンスに「ヤバイですよね」（日刊スポーツ）  Yahoo!ニュース"
     },
     {
-      "id": "bf249e4d8f45",
-      "title": "個性求めた元宝塚トップ蘭寿とむさん 我が子に学んだ歌う楽しみ",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8ybWpwcE02dGxEQUpuWE1TOXVIYUxSellvdm5oYWVFNHFEMV9lZENZMnpOdnFzdUFUd1lFUkRlajBuQkotMDc4UUxVZnc0VTV2X1VtYnZNaHRGUkNVWWVIbUZLWS1NSEJl?oc=5",
-      "source": "毎日新聞",
+      "id": "efd621103a0a",
+      "title": "宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aQllOQ05PYnNNVkNOUkZpUGJQMXZPdHZHVko4VmZ6VmdicFJCZUROay05WHQyZ0tVTk1JcE5NekRsOURPOUV5V0NmQkpfUDBncjdWYXFR?oc=5",
+      "source": "オリコンニュース",
       "source_type": "media",
-      "published_at": "2026-09-25T01:00:00",
-      "published_str": "2026/09/25 01:00",
+      "published_at": "2026-09-22T07:00:00",
+      "published_str": "2026/09/22 07:00",
       "image": null,
-      "troupe": "all",
-      "troupe_name": "全体・その他",
+      "troupe": "cosmos",
+      "troupe_name": "宙組",
       "stars": [],
-      "summary": "個性求めた元宝塚トップ蘭寿とむさん 我が子に学んだ歌う楽しみ  毎日新聞"
-    },
-    {
-      "id": "c672c302ad99",
-      "title": "『あぶない刑事』初舞台化決定…なんと宝塚歌劇団 主演＆完全オリジナルストーリー発表",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1aYWxLSFlXRklqUUxTaU1tR0huZlc1VXFHYVJNZnRxOFRuUVBoMWpHU0publdfZ3BlNWRTMjg1WmFQY2JiNUVpbF9uTXhaNUdDUlhjckttaGpienF0WmtobnBoc3FzcVFVbG9LcTlOOTNDdw?oc=5",
-      "source": "sanyonews.jp",
-      "source_type": "media",
-      "published_at": "2026-09-24T15:11:27",
-      "published_str": "2026/09/24 15:11",
-      "image": null,
-      "troupe": "all",
-      "troupe_name": "全体・その他",
-      "stars": [],
-      "summary": "『あぶない刑事』初舞台化決定…なんと宝塚歌劇団 主演＆完全オリジナルストーリー発表  sanyonews.jp"
+      "summary": "宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付  オリコンニュース"
     },
     {
       "id": "4c2af753531e",
@@ -763,34 +824,6 @@
       "troupe_name": "宙組",
       "stars": [],
       "summary": "画像・写真 | 宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付 2枚目  オリコンニュース"
-    },
-    {
-      "id": "efd621103a0a",
-      "title": "宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aQllOQ05PYnNNVkNOUkZpUGJQMXZPdHZHVko4VmZ6VmdicFJCZUROay05WHQyZ0tVTk1JcE5NekRsOURPOUV5V0NmQkpfUDBncjdWYXFR?oc=5",
-      "source": "オリコンニュース",
-      "source_type": "media",
-      "published_at": "2026-09-22T05:56:00",
-      "published_str": "2026/09/22 05:56",
-      "image": null,
-      "troupe": "cosmos",
-      "troupe_name": "宙組",
-      "stars": [],
-      "summary": "宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付  オリコンニュース"
-    },
-    {
-      "id": "19f298b61ceb",
-      "title": "画像・写真 | 宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付 1枚目",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iUlJyV0hRVXVoam9aU1dHN2tyQzJkNDQ0U3lhTHNlZldfYldQSUVoOWZya0cyUDhUTURiTTRSYTNObUJrU0ZRemxfWnpBM3pnMy1Fd004ZVp3dw?oc=5",
-      "source": "オリコンニュース",
-      "source_type": "media",
-      "published_at": "2026-09-22T05:56:00",
-      "published_str": "2026/09/22 05:56",
-      "image": null,
-      "troupe": "cosmos",
-      "troupe_name": "宙組",
-      "stars": [],
-      "summary": "画像・写真 | 宝塚歌劇団、宙組・聖叶亜＆志凪咲杜が退団 11月23日付 1枚目  オリコンニュース"
     },
     {
       "id": "7500b2fe452f",
@@ -842,8 +875,8 @@
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XQlJqdGQ5bjBuX1daU051SEk5RjN2Ym1SRnd5bHNsN2k4VGNqLW82UFJnQ29UTHVLSEgzblJxX2lVUnJqbzA2UFJXS2pzOUVhbTlMWk8xSjItbVY4ZW4wWHRvMUpFNy03RFBaMWtXeFp6VU8wRVFwYVNuMmdKdnc?oc=5",
       "source": "Yahoo!ニュース",
       "source_type": "media",
-      "published_at": "2026-09-22T06:17:45",
-      "published_str": "2026/09/22 06:17",
+      "published_at": "2026-09-22T07:00:00",
+      "published_str": "2026/09/22 07:00",
       "image": null,
       "troupe": "moon",
       "troupe_name": "月組",
@@ -865,6 +898,34 @@
       "summary": "おはようさん(^o^)いもこです〜シルバーウィークはエリザベートOGさん達がファンミしてはるやん！89期明日海りおサン89期美弥るりかサン95期柚香光サントートにフランツにルドルフやね(^o^)■明日海サンは退団後にエリザベートもしてはりますし、、、前夜祭のトークコーナーの自己紹介で『小池先生にエリザベートの申し子と言われた明日海りおです』って自分で言うとったわ（笑）自分で言うか？明日海サンは退団"
     },
     {
+      "id": "7ff43422b024",
+      "title": "＜ライブ中継・ライブ配信＞花組公演『エリザベート－愛と死の輪舞－』 | ニュース | 宝塚歌劇公式ホームページ",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBidTByX3daRWF5S2djQTVQcnY5dThEY1dIU2pBODhGQ0cxY0hXcmZieXZ4WENabEFsOG42Z0dRWURoQWFmV1EwdmNxdDczLXhfMVlzcTUzMGVWNXN5dzNJ?oc=5",
+      "source": "宝塚歌劇公式ホームページ",
+      "source_type": "media",
+      "published_at": "2026-09-19T07:00:00",
+      "published_str": "2026/09/19 07:00",
+      "image": null,
+      "troupe": "flower",
+      "troupe_name": "花組",
+      "stars": [],
+      "summary": "＜ライブ中継・ライブ配信＞花組公演『エリザベート－愛と死の輪舞－』 | ニュース | 宝塚歌劇公式ホームページ  宝塚歌劇公式ホームページ"
+    },
+    {
+      "id": "e729604a7ccd",
+      "title": "宝塚歌劇 花組宝塚大劇場公演『エリザベート－愛と死の輪舞（ロンド）－』千秋楽 ライブ中継 開催決定！",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84cUwwQlRqam1FZEVtQTVRRldmUjVhQ2RiVTd1enhwMkkzUzBsVjVmazdYN1JVaWJJMkljbnNCTmlOaXpEYnZ3YmZkY3RGLWpTRXZlMTNrZ3phTXM0LW5lV3Raa3czR1ZJZmc?oc=5",
+      "source": "PR TIMES",
+      "source_type": "media",
+      "published_at": "2026-09-19T07:00:00",
+      "published_str": "2026/09/19 07:00",
+      "image": null,
+      "troupe": "flower",
+      "troupe_name": "花組",
+      "stars": [],
+      "summary": "宝塚歌劇 花組宝塚大劇場公演『エリザベート－愛と死の輪舞（ロンド）－』千秋楽 ライブ中継 開催決定！  PR TIMES"
+    },
+    {
       "id": "79b53a03df7e",
       "title": "宝塚歌劇花組、ミュージカル「エリザベート」宝塚大劇場公演千秋楽を生中継＆生配信（ステージナタリー）",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9FWmV3UDNwNDI0OXJ5dXlBQmNDTExQSWhZd1FxMF9aWk1ITFNJXzROa3hWV1JDeURzajJkcFk0a2dBVjZaV05ubGphT2t2SS1NemIwcjMwSFFScVlPS1EwMURLOFlBd1B0R2VBVDhaUTR3MS1TWFhzODhMVDFPUUU?oc=5",
@@ -877,34 +938,6 @@
       "troupe_name": "花組",
       "stars": [],
       "summary": "宝塚歌劇花組、ミュージカル「エリザベート」宝塚大劇場公演千秋楽を生中継＆生配信（ステージナタリー）  Yahoo!ニュース"
-    },
-    {
-      "id": "329cc41bca45",
-      "title": "＜ライブ中継・ライブ配信＞花組公演『エリザベート－愛と死の輪舞－』",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBidTByX3daRWF5S2djQTVQcnY5dThEY1dIU2pBODhGQ0cxY0hXcmZieXZ4WENabEFsOG42Z0dRWURoQWFmV1EwdmNxdDczLXhfMVlzcTUzMGVWNXN5dzNJ?oc=5",
-      "source": "宝塚歌劇公式ホームページ",
-      "source_type": "media",
-      "published_at": "2026-09-19T07:00:00",
-      "published_str": "2026/09/19 07:00",
-      "image": null,
-      "troupe": "flower",
-      "troupe_name": "花組",
-      "stars": [],
-      "summary": "＜ライブ中継・ライブ配信＞花組公演『エリザベート－愛と死の輪舞－』  宝塚歌劇公式ホームページ"
-    },
-    {
-      "id": "e729604a7ccd",
-      "title": "宝塚歌劇 花組宝塚大劇場公演『エリザベート－愛と死の輪舞（ロンド）－』千秋楽 ライブ中継 開催決定！",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84cUwwQlRqam1FZEVtQTVRRldmUjVhQ2RiVTd1enhwMkkzUzBsVjVmazdYN1JVaWJJMkljbnNCTmlOaXpEYnZ3YmZkY3RGLWpTRXZlMTNrZ3phTXM0LW5lV3Raa3czR1ZJZmc?oc=5",
-      "source": "prtimes.jp",
-      "source_type": "media",
-      "published_at": "2026-09-19T07:00:00",
-      "published_str": "2026/09/19 07:00",
-      "image": null,
-      "troupe": "flower",
-      "troupe_name": "花組",
-      "stars": [],
-      "summary": "宝塚歌劇 花組宝塚大劇場公演『エリザベート－愛と死の輪舞（ロンド）－』千秋楽 ライブ中継 開催決定！  prtimes.jp"
     },
     {
       "id": "545f62499ba2",
@@ -921,34 +954,18 @@
       "summary": "こんばんは(^o^)NINE観てきたよ〜いもこはNINE好きやわ！■予習では『ぜったい寝るやろな？』って思ってたが（笑）寝なかったよ〜むしろ楽しかった！■悪い男のちなつちゃんがなぜだか格好よすぎて！後半の乱れ髪は百鬼夜行思い出したやん（笑）今まで知らなかった新しいちなつちゃんを拝ませていただきました！■そうそう休演日の雪んこ来てはったね(^o^)あーさせおっちおーじさん（たぶん）まなはる後はわから"
     },
     {
-      "id": "13e6fcc3b8dc",
-      "title": "音月桂が退団公演で意識していたこと「伝えられるものは全て伝えていきたい」",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PZEFRbUstNElNcTVWTF8xNlp4VU9rZy05Sl8zUVRnYzFxdjdpZXFvVlk1ci0xaUhsaUVScGs0clNTZ2tIeUZpNUttZDhOWHotRjdGVk9JMUFLUUdOQmREbGlsMHZteGJpY0JMdVVKaw?oc=5",
-      "source": "J:magazine!",
+      "id": "55689aa8b722",
+      "title": "『あぶない刑事』初舞台化決定…なんと宝塚歌劇団 主演＆完全オリジナルストーリー発表 (オリコン)",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONU0yUmN1VENpRng3RGtRRzVnVjBGcWJQNm1YSTkxbS02anczY3lZNlZrSXpZZGxfenQzZWUySnRfY09NQVB6Q2VWbW9PaG45N3RzaTdEajgzeFhUM0FSSDZNQmVTXzd0TkplbXl6NzZNRDdoZXlOczJUbkwzRmlpeHNfdTZqdlRLeVhHZXNn?oc=5",
+      "source": "Yahoo!ニュース",
       "source_type": "media",
-      "published_at": "2026-09-21T07:00:00",
-      "published_str": "2026/09/21 07:00",
+      "published_at": "2026-09-21T00:47:33",
+      "published_str": "2026/09/21 00:47",
       "image": null,
       "troupe": "all",
       "troupe_name": "全体・その他",
       "stars": [],
-      "summary": "音月桂が退団公演で意識していたこと「伝えられるものは全て伝えていきたい」  J:magazine!"
-    },
-    {
-      "id": "19163d1c423d",
-      "title": "宝塚 花組「エリザベート」前夜祭 トップ永久輝せあ「ギアかかるの早い」（デイリースポーツ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lRFRGb2paUDNvd3hINDMxMHRrdmtaQ3pCbE9qVjNmZVM1RUhveEhvSW9yZm11b2wwRkJNZWxrSmRidEhCZzZydlFQOXVYcHI5OTZlSFJqSVZxVENxSUxoVllrWlBpRWt5bjVpYVpWSHFzS2IxZUhxSGM4WTdYZ0U?oc=5",
-      "source": "Yahoo!ニュース",
-      "source_type": "media",
-      "published_at": "2026-09-18T07:00:00",
-      "published_str": "2026/09/18 07:00",
-      "image": null,
-      "troupe": "flower",
-      "troupe_name": "花組",
-      "stars": [
-        "永久輝せあ"
-      ],
-      "summary": "宝塚 花組「エリザベート」前夜祭 トップ永久輝せあ「ギアかかるの早い」（デイリースポーツ）  Yahoo!ニュース"
+      "summary": "『あぶない刑事』初舞台化決定…なんと宝塚歌劇団 主演＆完全オリジナルストーリー発表 (オリコン)  Yahoo!ニュース"
     },
     {
       "id": "d654267ef4f3",
@@ -979,6 +996,22 @@
       "summary": "「エリザベート」愛され続けて30年 宝塚大劇場で前夜祭、花組トップやOGが名曲披露  産経ニュース"
     },
     {
+      "id": "19163d1c423d",
+      "title": "宝塚 花組「エリザベート」前夜祭 トップ永久輝せあ「ギアかかるの早い」（デイリースポーツ）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lRFRGb2paUDNvd3hINDMxMHRrdmtaQ3pCbE9qVjNmZVM1RUhveEhvSW9yZm11b2wwRkJNZWxrSmRidEhCZzZydlFQOXVYcHI5OTZlSFJqSVZxVENxSUxoVllrWlBpRWt5bjVpYVpWSHFzS2IxZUhxSGM4WTdYZ0U?oc=5",
+      "source": "Yahoo!ニュース",
+      "source_type": "media",
+      "published_at": "2026-09-18T07:00:00",
+      "published_str": "2026/09/18 07:00",
+      "image": null,
+      "troupe": "flower",
+      "troupe_name": "花組",
+      "stars": [
+        "永久輝せあ"
+      ],
+      "summary": "宝塚 花組「エリザベート」前夜祭 トップ永久輝せあ「ギアかかるの早い」（デイリースポーツ）  Yahoo!ニュース"
+    },
+    {
       "id": "c2404cd9d8de",
       "title": "タカ＆ユージが登場！「あぶない刑事」宝塚歌劇星組で初舞台化、鴨川清作メモリーズも",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE96X21UYlloNVE5LU1JWERzLUFTS2t5dnFzNFhQMXNzSGl1TXk4aS1GVGJPRk5yMDk4NFJoQ21vRnJtaXR1NmxNVFltb3k?oc=5",
@@ -991,6 +1024,20 @@
       "troupe_name": "星組",
       "stars": [],
       "summary": "タカ＆ユージが登場！「あぶない刑事」宝塚歌劇星組で初舞台化、鴨川清作メモリーズも  ナタリー"
+    },
+    {
+      "id": "f88ab98fcf39",
+      "title": "【宝塚】星組次回作は「あぶない刑事」、放送開始40周年プロジェクト始動で舞台化実現",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1UYkJ5Z18ycXBFeGtaRVV0Nk0wdEpsZHNaSHRNTkVPS0pPYV9GUlg3Z3Fsam1QTFUxNHFITHB4eHdROVZZLXlOSm1UaGlGdUNKVGJlVkFHcjVFN0czOE8xdktFZ24wOThhSjM5WkRfMGYzU3ZsNnJv0gF_QVVfeXFMUHdNZzNjVnB5d0RZVnZRLWZBS0RNbXFkblhEZi1oR0Y2azNNUDlVWmczdmRlS0NtVFRvREw2S0FnT1hJLTZpam96aDZVUFpsaUxLRlA4RjRacElFN0NXUkZ5R1RGYko2VGMxRml2eFZZZ3RUNXRDSzNRQVhrbW0wRQ?oc=5",
+      "source": "日刊スポーツ",
+      "source_type": "media",
+      "published_at": "2026-09-18T07:00:00",
+      "published_str": "2026/09/18 07:00",
+      "image": null,
+      "troupe": "star",
+      "troupe_name": "星組",
+      "stars": [],
+      "summary": "【宝塚】星組次回作は「あぶない刑事」、放送開始40周年プロジェクト始動で舞台化実現  日刊スポーツ"
     },
     {
       "id": "92cfdf0b7a68",
@@ -1073,7 +1120,7 @@
       "id": "bb57406e3b91",
       "title": "『ＲＲＲ×TAKARAZUKA～√Rama』（星組／宝塚大劇場）を観たヨー",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53N3Q1dFBjTEdReENJQTR0bkwtbjNidmYyOEZwWjR3VzJKRnZSYjdBRHVYbGxTZEszX25pcFM1V3hyTzFlMG5ucU1mdUNDWFBPeEZHSG9tbkFnV2o2a0xqQXVQUlRXNDVwWkI3WURwYkE?oc=5",
-      "source": "サンテレビ",
+      "source": "sun-tv.co.jp",
       "source_type": "media",
       "published_at": "2026-09-15T07:00:00",
       "published_str": "2026/09/15 07:00",
@@ -1081,7 +1128,7 @@
       "troupe": "star",
       "troupe_name": "星組",
       "stars": [],
-      "summary": "『ＲＲＲ×TAKARAZUKA～√Rama』（星組／宝塚大劇場）を観たヨー  サンテレビ"
+      "summary": "『ＲＲＲ×TAKARAZUKA～√Rama』（星組／宝塚大劇場）を観たヨー  sun-tv.co.jp"
     },
     {
       "id": "7423913ab155",
@@ -1100,8 +1147,22 @@
       "summary": "雪組「ポーの一族」 名作の世界が宝塚色に 朝美絢、漫画から抜け出したようなエドガー  東京新聞"
     },
     {
-      "id": "9375dc8fd114",
-      "title": "新サービス！宝塚歌劇デジタルカードコレクション「My Gallery（マイ ギャラリー）」",
+      "id": "385c015b8301",
+      "title": "宝塚歌劇月組 ミュージカル『稲妻開化譚―イナズマカイカタン―』チケプラTradeにて公式リセール実施！",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE01ZUEzNUtPNXFzRlhuQkJFUEUxdk40YjBDcXdSUzlEZzB6dEI5MEIyN2g3UG9EcmVJUVZscEJyRWVDRUFLX3hlSUNRYkZlUkNKT213?oc=5",
+      "source": "株式会社チケットプラス",
+      "source_type": "media",
+      "published_at": "2026-09-16T02:34:35",
+      "published_str": "2026/09/16 02:34",
+      "image": null,
+      "troupe": "moon",
+      "troupe_name": "月組",
+      "stars": [],
+      "summary": "宝塚歌劇月組 ミュージカル『稲妻開化譚―イナズマカイカタン―』チケプラTradeにて公式リセール実施！  株式会社チケットプラス"
+    },
+    {
+      "id": "e834405bbd93",
+      "title": "新サービス！宝塚歌劇デジタルカードコレクション「My Gallery（マイ ギャラリー）」 | ニュース | 宝塚歌劇公式ホームページ",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBFWk53Tm9wc0VNWGh1R1U0OW05WlNTTUh5SXJxLWIzLWd4aDByYjhjNE1kSDUxaVl6WmxsWVV5ek8wVkhhdGlEV290UzVMRFh4ZFdhYU1NNGxZc0ZoTW5J?oc=5",
       "source": "宝塚歌劇公式ホームページ",
       "source_type": "media",
@@ -1111,7 +1172,7 @@
       "troupe": "all",
       "troupe_name": "全体・その他",
       "stars": [],
-      "summary": "新サービス！宝塚歌劇デジタルカードコレクション「My Gallery（マイ ギャラリー）」  宝塚歌劇公式ホームページ"
+      "summary": "新サービス！宝塚歌劇デジタルカードコレクション「My Gallery（マイ ギャラリー）」 | ニュース | 宝塚歌劇公式ホームページ  宝塚歌劇公式ホームページ"
     },
     {
       "id": "63b1b1a7bf72",
@@ -1144,22 +1205,6 @@
         "風間柚乃"
       ],
       "summary": "西宮で開幕…明治の世を憂う怪盗「稲妻小僧」、宝塚月組・風間柚乃がトキメキも盛り込んで熱演  Lmaga.jp"
-    },
-    {
-      "id": "334668ba3c51",
-      "title": "宝塚月組スター風間柚乃、2年ぶり3度目の主演作開幕 芝居巧者としての手腕を発揮",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSUQzMFFaYmtFQ25HZDR5RGFJTW41TnNldVVsUHlVQnBYQ3ZnaV9vbUxhRV8yMXpvYVVrWGhOb2Y0UFdRa280Wm9aQy1tWUhIRnhIejUtaVpSRGt2eFl2TE5IOFU0WmlMSVNVcDRGdWRBdkUxV1Q1NjhwSXNWeGdUOXU0VHBEdkFKTURjdnVNTkI4OTh6cFE?oc=5",
-      "source": "スポニチ Sponichi Annex",
-      "source_type": "media",
-      "published_at": "2026-09-13T07:00:00",
-      "published_str": "2026/09/13 07:00",
-      "image": null,
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [
-        "風間柚乃"
-      ],
-      "summary": "宝塚月組スター風間柚乃、2年ぶり3度目の主演作開幕 芝居巧者としての手腕を発揮  スポニチ Sponichi Annex"
     },
     {
       "id": "3e061c0456a7",
@@ -1273,20 +1318,6 @@
       "summary": "【記事全文】宝塚雪組 8年の時を経て「ポーの一族」開幕へ トップ朝美絢「エドガーとメリーベルは一心同体」  スポニチ Sponichi Annex"
     },
     {
-      "id": "e56791789d1a",
-      "title": "宝塚歌劇月組「NINE」より。",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HRTByN3RLdzFDUUhZV2RuOVNkMWtLelIxNEJfOEFXc0x4ZW13c2x2LWVLVDJIY055cnBqUzM3eDBFNlFfRk8yUDliVDg0M3ZUTFFXV3QzUU5WMXJmUG9DM0d3?oc=5",
-      "source": "ナタリー",
-      "source_type": "media",
-      "published_at": "2026-09-10T07:46:30",
-      "published_str": "2026/09/10 07:46",
-      "image": null,
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [],
-      "summary": "宝塚歌劇月組「NINE」より。  ナタリー"
-    },
-    {
       "id": "2b29d668608b",
       "title": "宝塚月組「NINE」開幕 〝黒一点〟の鳳月杏が魅せる男役芸、天紫珠李とプレサヨナラ",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NcVFPS1VpSzFFU2NYTEZPTFNBM2tCYjdTM2lZM0F3NmpNV1ExNDRnUU8tcDZScnFpbVF2UURlaTR4OXpUZVR5eGVDcWpGdTJfNWpjVWVHc3RhckpGd2Z5c3lHcUh6NVdqcVNSdVdaQktEOU8zSmc?oc=5",
@@ -1337,22 +1368,6 @@
       "summary": "月組トップコンビ鳳月杏＆天紫珠李囲み会見一問一答全文「宝塚らしくない宝塚版NINE」  産経ニュース"
     },
     {
-      "id": "99e301151a5f",
-      "title": "宝塚月組公演「ＮＩＮＥ」開幕 鳳月杏「宝塚版の宝塚らしくない『ＮＩＮＥ』というところが魅力」（スポーツ報知）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vU0dMWjdJWGl6cjRSXzg0MlNOS3Jnb01CVFFlekpWYnJaX3ZIeTM4Sk9NUkVlMG82Tl9mRG1Va1FRZVhHRzFPQnhKeUZQN0J5NjAxeGt3dFlBT2czWVltYkF0OTZ4Mkx1NHhCZ2g4Z3B3ZUZXS3F2SEwtR0JnZTQ?oc=5",
-      "source": "Yahoo!ニュース",
-      "source_type": "media",
-      "published_at": "2026-09-10T07:00:00",
-      "published_str": "2026/09/10 07:00",
-      "image": null,
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [
-        "鳳月杏"
-      ],
-      "summary": "宝塚月組公演「ＮＩＮＥ」開幕 鳳月杏「宝塚版の宝塚らしくない『ＮＩＮＥ』というところが魅力」（スポーツ報知）  Yahoo!ニュース"
-    },
-    {
       "id": "d8484ca0be28",
       "title": "第2弾は雪組トップスター＆トップ娘役ら、宝塚歌劇のオリジナルラベル缶「TAG LIVE LABEL」が9月8日から発売",
       "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFAxUHJlX3BVRVNtR0R3U21yZlJDeVpIYlVUa0g1ZDdLZFpuUVJObXVmSFN0UlczUFRnLTJNTng2ZTg?oc=5",
@@ -1370,7 +1385,7 @@
       "id": "9aac1345b4c0",
       "title": "【リリース】宝塚歌劇「TAG LIVE LABEL」第2弾雪組 発売（宝塚クリエイティブアーツ）",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wNzNpVEJCeGpBcTgyRm83a2dSVzRpcjNLSFBlNEFtLXVrNEw3UDFoU1AwN0tQT1AxRkNfWGUtbzd0clVnNkg4c1lzX251SEJ4RWhsT3U1Um9NYWFUOWwyanlYOEFiMThvekE?oc=5",
-      "source": "prtimes.jp",
+      "source": "PR TIMES",
       "source_type": "media",
       "published_at": "2026-09-07T07:00:00",
       "published_str": "2026/09/07 07:00",
@@ -1378,7 +1393,7 @@
       "troupe": "snow",
       "troupe_name": "雪組",
       "stars": [],
-      "summary": "【リリース】宝塚歌劇「TAG LIVE LABEL」第2弾雪組 発売（宝塚クリエイティブアーツ）  prtimes.jp"
+      "summary": "【リリース】宝塚歌劇「TAG LIVE LABEL」第2弾雪組 発売（宝塚クリエイティブアーツ）  PR TIMES"
     },
     {
       "id": "851f845a7fd1",
@@ -1494,20 +1509,6 @@
       "troupe_name": "全体・その他",
       "stars": [],
       "summary": "＜タカラヅカ・スカイ・ステージ＞10月ラインアップのお知らせ  宝塚歌劇公式ホームページ"
-    },
-    {
-      "id": "0204d0d3f6a3",
-      "title": "（追）＜動画配信サービス タカラヅカ・オン・デマンド＞9月15日配信開始のラインアップ（ゴールデン・リバティ（'25年月組・東京・千秋楽）オーヴァチュア！（'25年雪組・東京・千秋楽）他）",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yTWZfdGhuNE1qQUVfaDVhbGk3WW1WN1A3Y0FLanFONWhIM19WcGxzaWFLdXM2dHhjSXF6d3EzWU9BemtDYXVERFlWdDIyeThlZWZ3WHZXOU11TGc1QThF?oc=5",
-      "source": "宝塚歌劇公式ホームページ",
-      "source_type": "media",
-      "published_at": "2026-09-01T07:00:00",
-      "published_str": "2026/09/01 07:00",
-      "image": null,
-      "troupe": "moon",
-      "troupe_name": "月組",
-      "stars": [],
-      "summary": "（追）＜動画配信サービス タカラヅカ・オン・デマンド＞9月15日配信開始のラインアップ（ゴールデン・リバティ（'25年月組・東京・千秋楽）オーヴァチュア！（'25年雪組・東京・千秋楽）他）  宝塚歌劇公式ホームページ"
     }
   ]
 }
